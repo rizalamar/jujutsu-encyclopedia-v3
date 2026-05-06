@@ -35,6 +35,7 @@ export interface JJKData {
 	title_japanese: string;
 	type: string;
 	source: string;
+	season: string;
 	episodes: number;
 	status: string;
 	airing: boolean;
