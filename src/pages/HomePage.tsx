@@ -10,7 +10,7 @@ export default function Home() {
 	const { data, loading, error } = useAnimeJJK();
 
 	if (loading) {
-		return <Loading />;
+		return <Loading summon="Loading Cursed Energy..." />;
 	}
 
 	if (error || !data) {
@@ -118,7 +118,7 @@ export default function Home() {
 
 			<section className="px-8 py-16 md:px-16 bg-jjk-dark/50">
 				<div className="mb-12">
-					<h2 className="text-3xl font-bold font-space mb-2">System of Power</h2>
+					<h2 className="mb-2 text-3xl font-bold font-space">System of Power</h2>
 					<p className="text-gray-400">
 						Deep dive into the cursed techniques and innate abilities of Jujutsu Kaisen Characters.
 					</p>
