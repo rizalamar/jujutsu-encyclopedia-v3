@@ -7,7 +7,7 @@ export interface AnimeImage {
 }
 
 export interface Genre {
-	mal_id: string;
+	mal_id: number;
 	type: string;
 	name: string;
 }
@@ -49,7 +49,7 @@ export interface JJKData {
 	scored_by: number;
 	rank: number;
 	popularity: number;
-	sypnosis: string;
+	synopsis: string;
 	year: number;
 	studios: Studio[];
 	genres: Genre[];
@@ -74,7 +74,7 @@ export interface JJKData {
 	streaming: {
 		name: string;
 		url: string;
-	};
+	}[];
 }
 
 export interface JJKResponse {
