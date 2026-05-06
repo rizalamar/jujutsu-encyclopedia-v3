@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+	--color-jjk-dark: #0a0f1d;
+	--color-jjk-blue: #16223f;
+	--color-jjk-accent: #00d2ff;
+	--color-jjk-purple: #9d50bb;
+	--font-permanent: "Permanent Marker", cursive;
+	--font-space: "Space Grotesk", sans-serif;
+}
+
+:root {
+	background-color: var(--color-jjk-dark);
+	color: white;
+	font-family: var(--font-space);
+}
+
+@layer utilities {
+	.text-neon {
+		text-shadow: 0 0 10px var(--color-jjk-accent), 0 0 20px var(--color-jjk-accent);
+	}
+	.glass-effect {
+		background: rgba(22, 34, 63, 0.7);
+		backdrop-filter: blur(12px);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+	}
+}
