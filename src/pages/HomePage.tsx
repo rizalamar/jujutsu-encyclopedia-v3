@@ -3,6 +3,8 @@ import Error from "../components/ui/Error";
 import Loading from "../components/ui/Loading";
 import { useAnimeJJK } from "../hooks/useAnimeJJK";
 import heroImage from "../assets/poster.jpg";
+import TechniqueAccordion from "../components/ui/TechniqueAccordion";
+import { cursedTechniques } from "../data/cursedTechniques";
 
 export default function Home() {
 	const { data, loading, error } = useAnimeJJK();
@@ -112,6 +114,17 @@ export default function Home() {
 						<p className="text-2xl font-bold">{data.source}</p>
 					</div>
 				</div>
+			</section>
+
+			<section className="px-8 py-16 md:px-16 bg-jjk-dark/50">
+				<div className="mb-12">
+					<h2 className="text-3xl font-bold font-space mb-2">System of Power</h2>
+					<p className="text-gray-400">
+						Deep dive into the cursed techniques and innate abilities of Jujutsu Kaisen Characters.
+					</p>
+				</div>
+
+				<TechniqueAccordion powers={cursedTechniques} />
 			</section>
 		</div>
 	);
