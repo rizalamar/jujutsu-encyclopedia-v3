@@ -1,28 +1,27 @@
 export interface Anime {
 	mal_id: number;
 	url: string;
-	webp: {
-		image_url: string;
-		small_image_url: string;
-		large_image_url: string;
+	images: {
+		webp: {
+			image_url: string;
+			small_image_url: string;
+			large_image_url: string;
+		};
 	};
 	title: string;
 }
 
 export interface Manga {
-	role: string;
-	manga: {
-		mal_id: number;
-		url: string;
-		images: {
-			webp: {
-				image_url: string;
-				small_image_url: string;
-				large_image_url: string;
-			};
+	mal_id: number;
+	url: string;
+	images: {
+		webp: {
+			image_url: string;
+			small_image_url: string;
+			large_image_url: string;
 		};
-		title: string;
 	};
+	title: string;
 }
 
 export interface Voices {
@@ -73,9 +72,12 @@ export interface CharacterDetail {
 	about: string;
 	anime: {
 		role: string;
-		anime: Anime[];
-	};
-	manga: Manga[];
+		anime: Anime;
+	}[];
+	manga: {
+		role: string;
+		manga: Manga;
+	}[];
 	voices: Voices[];
 }
 
