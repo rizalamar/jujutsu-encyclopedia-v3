@@ -1,23 +1,18 @@
 import { useCharacters } from "../hooks/useCharacters";
 import Loading from "../components/ui/Loading";
 import Error from "../components/ui/Error";
-import { useState } from "react";
 import { Search, User } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function CharacterPage() {
-	const { characters, loading, error } = useCharacters();
-	const [searchQuery, setSearchQuery] = useState<string>("");
-
-	const filteredCharacter = characters?.filter((char) =>
-		char.character.name.toLowerCase().includes(searchQuery.toLowerCase())
-	);
+	const { loading, error, pagination, goToPage, totalPages, currentPage, searchQuery, handleSearch } =
+		useCharacters();
 
 	if (loading) {
 		return <Loading summon="Summoning Sorceres..." />;
 	}
 
-	if (error || !characters) {
+	if (error || !pagination) {
 		return <Error error={error} />;
 	}
 
@@ -45,14 +40,14 @@ export default function CharacterPage() {
 						placeholder="Search Sorceres..."
 						className="w-full py-3 pl-12 pr-6 transition-all border rounded-full outline-none bg-jjk-blue/30 border-white/20 focus: focus:border-jjk-accent/50 focus:bg-jjk-blue/50"
 						value={searchQuery}
-						onChange={(e) => setSearchQuery(e.target.value)}
+						onChange={(e) => handleSearch(e.target.value)}
 					/>
 				</div>
 			</div>
 
 			{/* Character Grid */}
 			<div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6">
-				{filteredCharacter.map((char) => (
+				{pagination.map((char) => (
 					<div key={char.character.mal_id} className="relative flex flex-col items-center group">
 						{/* Character Image */}
 						<Link
@@ -89,7 +84,27 @@ export default function CharacterPage() {
 				))}
 			</div>
 
-			{filteredCharacter.length === 0 && (
+			<div className="flex items-center justify-center gap-4 mt-12">
+				<button
+					onClick={() => goToPage(currentPage - 1)}
+					disabled={currentPage === 1}
+					className="px-4 py-2 border rounded cursor-pointer disabled:opacity-30"
+				>
+					Previous
+				</button>
+				<span>
+					Page {currentPage} of {totalPages}
+				</span>
+				<button
+					onClick={() => goToPage(currentPage + 1)}
+					disabled={currentPage === totalPages}
+					className="px-4 py-2 border rounded cursor-pointer disabled:opacity-30"
+				>
+					Next
+				</button>
+			</div>
+
+			{pagination.length === 0 && (
 				<div className="py-20 text-center">
 					<p className="text-gray-500">No sorcerers found matching search.</p>
 				</div>
