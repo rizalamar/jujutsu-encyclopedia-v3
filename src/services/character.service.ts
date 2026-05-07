@@ -2,10 +2,11 @@ import type { Character, CharacterDetail, CharacterDetailResponse, CharacterResp
 import { api } from "../api/api";
 
 export const characterService = {
-	getAllCharacters: async (): Promise<CharacterResponse> => {
-		return api.get<Character[]>("anime/40748/characters");
+	getAllCharacters: async (id: number = 40748): Promise<CharacterResponse> => {
+		return api.get<Character[]>(`anime/${id}/characters`);
 	},
 	getCharacterById: async (id: string): Promise<CharacterDetailResponse> => {
 		return api.get<CharacterDetail>(`/characters/${id}/full`);
 	},
 };
+
