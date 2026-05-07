@@ -15,7 +15,7 @@ const JJK_SHOWS = [
 		accent: "border-jjk-accent/30 shadow-jjk-accent/10",
 	},
 	{
-		id: 41084,
+		id: 48561,
 		title: "Jujutsu Kaisen 0",
 		year: "2021",
 		type: "Movie",

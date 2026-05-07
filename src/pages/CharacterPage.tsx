@@ -5,7 +5,7 @@ import { Search, User } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function CharacterPage() {
-	const { loading, error, pagination, goToPage, totalPages, currentPage, searchQuery, handleSearch } =
+	const { loading, error, pagination, goToPage, totalPages, currentPage, searchQuery, handleSearch, totalResult } =
 		useCharacters();
 
 	if (loading) {
@@ -26,6 +26,7 @@ export default function CharacterPage() {
 					</h1>
 					<p className="max-w-md text-gray-400">
 						Explore the powerful sorceres and cursed spirits from the Jujutsu Kaisen universe.
+						<span>Showing {totalResult} characters from the selected series.</span>
 					</p>
 				</div>
 

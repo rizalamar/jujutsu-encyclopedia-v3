@@ -11,11 +11,12 @@ export const useCharacters = () => {
 	const currentPage = parseInt(searchParams.get("page") || "1");
 	const CHARS = 20;
 	const [searchQuery, setSearchQuery] = useState<string>("");
+	const animeId = parseInt(searchParams.get("animeId") || "40748");
 
 	useEffect(() => {
 		const fetchCharacters = async () => {
 			try {
-				const res = await characterService.getAllCharacters();
+				const res = await characterService.getAllCharacters(animeId);
 				setCharacters(res.data);
 				setError(null);
 			} catch (error) {
@@ -26,7 +27,7 @@ export const useCharacters = () => {
 		};
 
 		fetchCharacters();
-	}, []);
+	}, [animeId]);
 
 	const filteredCharacter = useMemo(() => {
 		if (!characters) return [];
@@ -52,5 +53,15 @@ export const useCharacters = () => {
 		setSearchParam(searchParams);
 	};
 
-	return { loading, error, pagination, goToPage, totalPages, currentPage, searchQuery, handleSearch };
+	return {
+		loading,
+		error,
+		pagination,
+		goToPage,
+		totalPages,
+		currentPage,
+		searchQuery,
+		handleSearch,
+		totalResult: filteredCharacter.length,
+	};
 };
