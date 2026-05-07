@@ -8,6 +8,7 @@ import { cursedTechniques } from "../data/cursedTechniques";
 
 export default function Home() {
 	const { data, loading, error } = useAnimeJJK();
+	const filteredCursedTechnique = cursedTechniques.slice(0, 4);
 
 	if (loading) {
 		return <Loading summon="Loading Cursed Energy..." />;
@@ -124,7 +125,7 @@ export default function Home() {
 					</p>
 				</div>
 
-				<TechniqueAccordion powers={cursedTechniques} />
+				<TechniqueAccordion powers={filteredCursedTechnique} />
 			</section>
 		</div>
 	);
