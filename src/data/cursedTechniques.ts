@@ -25,12 +25,7 @@ export const cursedTechniques: CursedPower[] = [
 				description: "Even without cursed energy, Yuji can destroy walls and throw cars with ease.",
 			},
 		],
-		traits: {
-			age: "15",
-			birthday: "March 20th",
-			height: "173 cm",
-			occupation: "Jujutsu Sorcerer, Student",
-		},
+		status: "Active",
 		grade: "Grade 1",
 	},
 	{
@@ -70,12 +65,7 @@ export const cursedTechniques: CursedPower[] = [
 			appearance:
 				"A vast, empty void filled with stars, galaxies, and the literal manifestation of infinite knowledge.",
 		},
-		traits: {
-			age: "28",
-			birthday: "December 7th",
-			height: "190 cm",
-			occupation: "Jujutsu Sorcerer, Teacher",
-		},
+		status: "Sealed",
 		grade: "Special Grade",
 	},
 	{
@@ -108,12 +98,7 @@ export const cursedTechniques: CursedPower[] = [
 				"Floods the area with thick shadows, allowing the user to manifest multiple shikigami simultaneously and attack from any shadow.",
 			appearance: "A dark cave-like area where the floor is composed of a sea of fluid, bubbling shadows.",
 		},
-		traits: {
-			age: "15",
-			birthday: "December 22nd",
-			height: "175 cm",
-			occupation: "Jujutsu Sorcerer, Student",
-		},
+		status: "Active",
 		grade: "Grade 2",
 	},
 	{
@@ -148,12 +133,7 @@ export const cursedTechniques: CursedPower[] = [
 			appearance:
 				"A demonic Buddhist shrine decorated with horns and skulls, sitting atop a pile of bones in a shallow pool of water.",
 		},
-		traits: {
-			age: "1000+",
-			birthday: "Unknown",
-			height: "173 cm (In Yuji's body)",
-			occupation: "King of Curses",
-		},
+		status: "Active",
 		grade: "Special Grade",
 	},
 	{
@@ -194,6 +174,7 @@ export const cursedTechniques: CursedPower[] = [
 				description: "Due to zero cursed energy, she is invisible to barriers and automated cursed detections.",
 			},
 		],
+		status: "Active",
 		grade: "Grade 4", // Official rank, but strength is Grade 1 level
 	},
 	{
@@ -215,6 +196,7 @@ export const cursedTechniques: CursedPower[] = [
 					"Mode penyerangan yang meningkatkan kekuatan secara drastis dan menggunakan teknik 'Unblockable Drumming Beat'.",
 			},
 		],
+		status: "Active",
 		grade: "Grade 2",
 	},
 	{
@@ -235,6 +217,7 @@ export const cursedTechniques: CursedPower[] = [
 				description: "Menciptakan dampak ledakan kuat yang melemparkan target dari jarak jauh.",
 			},
 		],
+		status: "Active",
 		grade: "Grade 1",
 	},
 	{
@@ -262,6 +245,7 @@ export const cursedTechniques: CursedPower[] = [
 				"Creates an environment where Mahito is literally in the palm of the target's hand, allowing him to transfigure their soul without physical contact.",
 			appearance: "A dark space surrounded by a massive number of interconnected hands.",
 		},
+		status: "Deceased",
 		grade: "Special Grade",
 	},
 	{
@@ -288,6 +272,7 @@ export const cursedTechniques: CursedPower[] = [
 				"Traps the target inside a volcanic chamber where ordinary sorcerers would incinerate instantly.",
 			appearance: "The interior of an active, molten volcano.",
 		},
+		status: "Deceased",
 		grade: "Special Grade",
 	},
 	{
@@ -309,6 +294,7 @@ export const cursedTechniques: CursedPower[] = [
 					"A binding vow that increases Nanami's cursed energy output once his official working hours end.",
 			},
 		],
+		status: "Deceased",
 		grade: "Grade 1",
 	},
 	{
@@ -326,6 +312,7 @@ export const cursedTechniques: CursedPower[] = [
 					"By clapping his hands, Todo can swap the positions of two people or objects that possess a minimum amount of cursed energy.",
 			},
 		],
+		status: "Active",
 		grade: "Grade 1",
 	},
 	{
@@ -342,12 +329,7 @@ export const cursedTechniques: CursedPower[] = [
 					"Healing wounds and regenerating body parts by converting negative cursed energy into positive energy.",
 			},
 		],
-		traits: {
-			age: "27",
-			birthday: "July 3rd",
-			height: "184 cm",
-			occupation: "Jujutsu Sorcerer",
-		},
+		status: "Active",
 		grade: "Grade 1", // Special status as a Doctor, equivalent to Grade 1 utility
 	},
 	{
@@ -364,6 +346,7 @@ export const cursedTechniques: CursedPower[] = [
 					"Creates a small circle around the user. Anything that enters the circle is automatically intercepted with a high-speed sword strike.",
 			},
 		],
+		status: "Deceased",
 		grade: "Grade 3",
 	},
 	{
@@ -384,6 +367,7 @@ export const cursedTechniques: CursedPower[] = [
 				description: "Allows the user to see and hear through the puppet's sensors regardless of distance.",
 			},
 		],
+		status: "Deceased",
 		grade: "Grade 1",
 	},
 	{
@@ -400,6 +384,7 @@ export const cursedTechniques: CursedPower[] = [
 					"The secret method to create independent cursed corpses like Panda by using three compatible souls.",
 			},
 		],
+		status: "Deceased",
 		grade: "Grade 1", // Candidate for Special Grade due to his army creation potential
 	},
 	{
@@ -569,6 +554,7 @@ export const cursedTechniques: CursedPower[] = [
 					"A suicide binding vow where a crow trades its life to remove its cursed energy limit, creating a devastating kamikaze strike.",
 			},
 		],
+		status: "Active",
 		grade: "Grade 1",
 	},
 	{
@@ -586,6 +572,7 @@ export const cursedTechniques: CursedPower[] = [
 					"If the target fails to follow the 24fps movement rule, they are frozen in a flat, frame-like sheet for one second.",
 			},
 		],
+		status: "Deceased",
 		grade: "Grade 1", // Specifically "Special 1st Grade"
 	},
 
@@ -609,6 +596,7 @@ export const cursedTechniques: CursedPower[] = [
 					"Fires buds that feed on the target's cursed energy; the more energy the target uses, the deeper the buds grow.",
 			},
 		],
+		status: "Deceased",
 		grade: "Special Grade",
 	},
 	{
@@ -631,6 +619,7 @@ export const cursedTechniques: CursedPower[] = [
 			description: "A tropical beach domain that acts as a guaranteed hit environment for his shikigami swarm.",
 			appearance: "A beautiful, sun-drenched beach with a calm ocean that hides deadly monsters.",
 		},
+		status: "Deceased",
 		grade: "Special Grade",
 	},
 
@@ -671,6 +660,7 @@ export const cursedTechniques: CursedPower[] = [
 					"Combines a massive number of gathered cursed spirits into a single, concentrated blast of high-density cursed energy.",
 			},
 		],
+		status: "Deceased",
 		grade: "Special Grade",
 	},
 	{
@@ -696,6 +686,7 @@ export const cursedTechniques: CursedPower[] = [
 				description: "Compresses blood to its absolute limit to prepare for high-velocity piercing attacks.",
 			},
 		],
+		status: "Active",
 		grade: "Special Grade",
 	},
 	{

@@ -1,10 +1,3 @@
-export interface CharacterTraits {
-	age?: string;
-	birthday?: string;
-	height?: string;
-	occupation?: string;
-}
-
 export interface CursedPower {
 	id: string;
 	characterId: number;
@@ -21,6 +14,6 @@ export interface CursedPower {
 		description: string;
 		appearance: string;
 	};
-	traits?: CharacterTraits;
+	status?: "Active" | "Deceased" | "Sealed" | "Unknown";
 	grade: "Special Grade" | "Grade 1" | "Grade 2" | "Grade 3" | "Grade 4";
 }

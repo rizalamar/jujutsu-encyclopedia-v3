@@ -39,10 +39,8 @@ export interface Voices {
 }
 
 export interface CharacterPicture {
-	images: {
-		jpg: {
-			image_url: string;
-		};
+	jpg: {
+		image_url: string;
 	};
 }
 
