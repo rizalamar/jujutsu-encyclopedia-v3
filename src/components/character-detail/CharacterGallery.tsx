@@ -22,7 +22,7 @@ export default function CharacterGallery({ characterId, characterName }: Props) 
 				</div>
 			) : (
 				<div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
-					{pictures.length > 0 ? (
+					{pictures?.length > 0 ? (
 						pictures.map((pic, idx) => (
 							<div
 								key={idx}
