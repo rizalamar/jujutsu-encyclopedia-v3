@@ -25,7 +25,12 @@ export const cursedTechniques: CursedPower[] = [
 				description: "Even without cursed energy, Yuji can destroy walls and throw cars with ease.",
 			},
 		],
-
+		traits: {
+			age: "15",
+			birthday: "March 20th",
+			height: "173 cm",
+			occupation: "Jujutsu Sorcerer, Student",
+		},
 		grade: "Grade 1",
 	},
 	{
@@ -65,6 +70,12 @@ export const cursedTechniques: CursedPower[] = [
 			appearance:
 				"A vast, empty void filled with stars, galaxies, and the literal manifestation of infinite knowledge.",
 		},
+		traits: {
+			age: "28",
+			birthday: "December 7th",
+			height: "190 cm",
+			occupation: "Jujutsu Sorcerer, Teacher",
+		},
 		grade: "Special Grade",
 	},
 	{
@@ -96,6 +107,12 @@ export const cursedTechniques: CursedPower[] = [
 			description:
 				"Floods the area with thick shadows, allowing the user to manifest multiple shikigami simultaneously and attack from any shadow.",
 			appearance: "A dark cave-like area where the floor is composed of a sea of fluid, bubbling shadows.",
+		},
+		traits: {
+			age: "15",
+			birthday: "December 22nd",
+			height: "175 cm",
+			occupation: "Jujutsu Sorcerer, Student",
 		},
 		grade: "Grade 2",
 	},
@@ -130,6 +147,12 @@ export const cursedTechniques: CursedPower[] = [
 				"A unique domain without a barrier that automatically slashes anything within a 200-meter radius, creating a literal field of death.",
 			appearance:
 				"A demonic Buddhist shrine decorated with horns and skulls, sitting atop a pile of bones in a shallow pool of water.",
+		},
+		traits: {
+			age: "1000+",
+			birthday: "Unknown",
+			height: "173 cm (In Yuji's body)",
+			occupation: "King of Curses",
 		},
 		grade: "Special Grade",
 	},
@@ -319,6 +342,12 @@ export const cursedTechniques: CursedPower[] = [
 					"Healing wounds and regenerating body parts by converting negative cursed energy into positive energy.",
 			},
 		],
+		traits: {
+			age: "27",
+			birthday: "July 3rd",
+			height: "184 cm",
+			occupation: "Jujutsu Sorcerer",
+		},
 		grade: "Grade 1", // Special status as a Doctor, equivalent to Grade 1 utility
 	},
 	{

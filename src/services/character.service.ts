@@ -16,6 +16,6 @@ export const characterService = {
 		return api.get<CharacterDetail>(`/characters/${id}/full`);
 	},
 	getCharacterPictures: async (id: string): Promise<CharacterPicturesResponse> => {
-		return api.get<CharacterPicture[]>(`/characters/${id}pictures`);
+		return api.get<CharacterPicture[]>(`/characters/${id}/pictures`);
 	},
 };
