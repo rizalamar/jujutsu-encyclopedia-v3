@@ -4,20 +4,20 @@ import Loading from "../components/ui/Loading";
 import Error from "../components/ui/Error";
 import { cursedTechniques } from "../data/cursedTechniques";
 import BackButton from "../components/ui/BackButton";
-import { useState } from "react";
 import CharacterHero from "../components/character-detail/CharacterHero";
 import CharacterBio from "../components/character-detail/CharacterBio";
 import CharacterMedia from "../components/character-detail/CharacterMedia";
 import CharacterGallery from "../components/character-detail/CharacterGallery";
 import CharacterVoices from "../components/character-detail/CharacterVoices";
 import CharacterPowerSystem from "../components/character-detail/CharacterPowerSystem";
+import { useFavorites } from "../hooks/useFavorites";
 
 export default function CharacterDetailPage() {
 	const { id, characterDetail, loading, error } = useCharacterDetail();
+	const { isFavorite, toggleFavorite } = useFavorites();
 	const navigate = useNavigate();
 	const location = useLocation();
 	const fromShow = location.state?.fromShow;
-	const [isFavorite, setIsFavorite] = useState(false);
 
 	const staticData = cursedTechniques.find((p) => p.characterId === Number(id));
 	const cursedTechniquesCharacter = cursedTechniques.filter((t) => t.characterId === Number(id));
@@ -39,8 +39,8 @@ export default function CharacterDetailPage() {
 				id={id}
 				character={characterDetail}
 				staticData={staticData}
-				isFavorite={isFavorite}
-				onFavoriteToggle={() => setIsFavorite(!isFavorite)}
+				isFavorite={isFavorite(characterDetail.mal_id)}
+				onFavoriteToggle={() => toggleFavorite(characterDetail)}
 			/>
 
 			{/* Content Section */}
