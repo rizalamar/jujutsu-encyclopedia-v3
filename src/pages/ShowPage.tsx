@@ -83,7 +83,11 @@ export default function ShowPage() {
 							<p className="mb-6 text-sm text-gray-400 line-clamp-2">{show.description}</p>
 
 							<button
-								onClick={() => navigate(`/characters?animeId=${show.id}`)}
+								onClick={() =>
+									navigate(`/characters?animeId=${show.id}`, {
+										state: { fromShow: show.title },
+									})
+								}
 								className="flex items-center justify-center w-full gap-2 py-3 font-bold transition-all border rounded-xl bg-white/5 border-white/10 hover:bg-white hover:text-jjk-dark"
 							>
 								<PlayCircle size={20} />

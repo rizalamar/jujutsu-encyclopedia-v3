@@ -2,11 +2,13 @@ import { useCharacters } from "../hooks/useCharacters";
 import Loading from "../components/ui/Loading";
 import Error from "../components/ui/Error";
 import { Search, User } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function CharacterPage() {
 	const { loading, error, pagination, goToPage, totalPages, currentPage, searchQuery, handleSearch, totalResult } =
 		useCharacters();
+	const location = useLocation();
+	const fromShow = location.state?.fromShow;
 
 	if (loading) {
 		return <Loading summon="Summoning Sorceres..." />;
@@ -50,6 +52,7 @@ export default function CharacterPage() {
 						{/* Character Image */}
 						<Link
 							to={`/characters/${char.character.mal_id}`}
+							state={{ fromShow: fromShow }}
 							className="relative aspect-3/4 w-full overflow-hidden rounded-2xl border border-white/10 bg-jjk-blue/20 transition-all duration-500 group-hover:scale-[1.02] group-hover:border-jjk-accent/50 group-hover:shadow-[0_0_20px_rgba(0, 210, 255,0.2)]"
 						>
 							<img

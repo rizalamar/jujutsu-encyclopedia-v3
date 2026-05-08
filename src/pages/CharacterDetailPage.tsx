@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useCharacterDetail } from "../hooks/useCharacterDetail";
 import Loading from "../components/ui/Loading";
 import Error from "../components/ui/Error";
@@ -15,6 +15,8 @@ import CharacterPowerSystem from "../components/character-detail/CharacterPowerS
 export default function CharacterDetailPage() {
 	const { id, characterDetail, loading, error } = useCharacterDetail();
 	const navigate = useNavigate();
+	const location = useLocation();
+	const fromShow = location.state?.fromShow;
 	const [isFavorite, setIsFavorite] = useState(false);
 
 	const staticData = cursedTechniques.find((p) => p.characterId === Number(id));
@@ -26,6 +28,11 @@ export default function CharacterDetailPage() {
 	return (
 		<main className="min-h-screen text-white bg-jjk-dark pb-20">
 			<BackButton onClick={() => navigate(-1)} />
+			{fromShow && (
+				<div className="px-4 py-1.5 bg-jjk-accent/10 border border-jjk-accent/20 rounded-full text-[10px] font-bold text-jjk-accent uppercase tracking-widest animate-in fade-in slide-in-from-left-4 duration-500">
+					Part of {fromShow} Case
+				</div>
+			)}
 
 			{/* Hero Detail Section */}
 			<CharacterHero
