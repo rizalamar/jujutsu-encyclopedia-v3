@@ -38,6 +38,14 @@ export interface Voices {
 	};
 }
 
+export interface CharacterPicture {
+	images: {
+		jpg: {
+			image_url: string;
+		};
+	};
+}
+
 export interface Character {
 	character: {
 		mal_id: number;
@@ -79,6 +87,10 @@ export interface CharacterDetail {
 		manga: Manga;
 	}[];
 	voices: Voices[];
+}
+
+export interface CharacterPicturesResponse {
+	data: CharacterPicture[];
 }
 
 export interface CharacterResponse {
