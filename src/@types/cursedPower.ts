@@ -3,7 +3,7 @@ export interface CursedPower {
 	characterId: number;
 	ownerName: string;
 	techniqueName: string;
-	type: "Innate Technique" | "Inherited Technique" | "Barrier Technique";
+	type: "Innate Technique" | "Inherited Technique" | "Barrier Technique" | "Shikigami Ability" | "None";
 	description: string;
 	abilities: {
 		name: string;
@@ -15,5 +15,5 @@ export interface CursedPower {
 		appearance: string;
 	};
 	status?: "Active" | "Deceased" | "Sealed" | "Unknown";
-	grade: "Special Grade" | "Grade 1" | "Grade 2" | "Grade 3" | "Grade 4";
+	grade: "Special Grade" | "Grade 1" | "Grade 2" | "Grade 3" | "Grade 4" | "Non-Sorcerer";
 }

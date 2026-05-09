@@ -428,12 +428,23 @@ export const cursedTechniques: CursedPower[] = [
 		description: "Allows the user to manifest the powers of four auspicious beasts by covering their face.",
 		abilities: [
 			{
-				name: "Kaikochi",
+				name: "Kaikochi (Number One)",
 				description: "Summons a homing needle made of cursed energy to pierce the target.",
 			},
 			{
-				name: "Reishi",
-				description: "Coats the user in a fluid-like cursed energy to evade attacks easily.",
+				name: "Reishi (Number Two)",
+				description:
+					"Coats the user in a fluid-like cursed energy that grants high-speed movement and evasion.",
+			},
+			{
+				name: "Kirin (Number Three)",
+				description:
+					"Increases the user's durability and numbs pain, allowing them to withstand heavy attacks.",
+			},
+			{
+				name: "Ryu (Number Four)",
+				description:
+					"The most powerful summon; it manifests raw cursed energy in the form of a dragon for a devastating physical strike.",
 			},
 		],
 		grade: "Grade 2",
@@ -872,5 +883,381 @@ export const cursedTechniques: CursedPower[] = [
 			},
 		],
 		grade: "Grade 4", // Based on his brief time as a practitioner
+	},
+	{
+		id: "cp-034",
+		characterId: 189224, // Mimiko Hasaba
+		ownerName: "Mimiko Hasaba",
+		techniqueName: "Doll Manipulation",
+		type: "Innate Technique",
+		description:
+			"A technique that allows the user to manipulate a stuffed doll to hang targets or manifest cursed effects based on the doll's condition.",
+		abilities: [
+			{
+				name: "Lasso Hang",
+				description:
+					"By placing a noose around her doll's neck, she can manifest a rope that hangs and strangulates the intended target.",
+			},
+		],
+		grade: "Grade 2", // Follower of Geto
+	},
+	{
+		id: "cp-035",
+		characterId: 189225, // Nanako Hasaba
+		ownerName: "Nanako Hasaba",
+		techniqueName: "Camera Manipulation",
+		type: "Innate Technique",
+		description:
+			"A technique that manipulates reality through a cell phone camera; whatever happens to the subject in the photo happens in real life.",
+		abilities: [
+			{
+				name: "Subject Manipulation",
+				description:
+					"By taking a photo of a target, she can alter their physical state or position based on how she interacts with the digital image.",
+			},
+		],
+		grade: "Grade 2",
+	},
+	{
+		id: "cp-036",
+		characterId: 184437, // Atsuya Kusakabe
+		ownerName: "Atsuya Kusakabe",
+		techniqueName: "New Shadow Style",
+		type: "Barrier Technique",
+		description:
+			"The strongest Grade 1 sorcerer without an innate technique, relying entirely on masterful swordplay and anti-domain barriers.",
+		abilities: [
+			{
+				name: "Simple Domain",
+				description:
+					"Automatically parries or intercepts any attack that enters his domain's radius with god-like reflexes.",
+			},
+			{
+				name: "Evening Moon",
+				description:
+					"A specialized sword stance used to strengthen the defensive and offensive capabilities of his Simple Domain.",
+			},
+		],
+		grade: "Grade 1",
+	},
+	{
+		id: "cp-037",
+		characterId: 189226, // Larue
+		ownerName: "Larue",
+		techniqueName: "Heart Catch",
+		type: "Innate Technique",
+		description:
+			"A technique that allows the user to manifest a giant pair of phantom hands that can grab or strike targets.",
+		abilities: [
+			{
+				name: "Phantom Grip",
+				description:
+					"Manifests a large hand that can physically restrain even powerful opponents, even if they cannot see the spirit energy.",
+			},
+		],
+		grade: "Grade 1", // Former member of Geto's inner circle
+	},
+	{
+		id: "cp-038",
+		characterId: 237184, // Toshihisa Negi
+		ownerName: "Toshihisa Negi",
+		techniqueName: "Cursed Energy Strike",
+		type: "Innate Technique",
+		description:
+			"A technique that allows the user to manipulate and release cursed energy through physical strikes, often leaving a scarred mark on his face as a result of his power.",
+		abilities: [
+			{
+				name: "Enhanced Physical Prowess",
+				description:
+					"Focuses cursed energy into his limbs to significantly increase the impact of his hand-to-hand combat.",
+			},
+		],
+		grade: "Grade 2", // Member of Geto's inner circle
+	},
+	{
+		id: "cp-039",
+		characterId: 189227, // Miguel Oduol
+		ownerName: "Miguel Oduol",
+		techniqueName: "Hakuna Matata (Cursed Tool Mastery)",
+		type: "Innate Technique",
+		description:
+			"While his specific innate technique remains largely hidden, he is a master of using powerful cursed tools and has immense physical resilience.",
+		abilities: [
+			{
+				name: "Black Rope Mastery",
+				description:
+					"Expertly utilizes the Black Rope, a special cursed tool that can disrupt and cancel out other sorcerers' cursed techniques upon contact.",
+			},
+			{
+				name: "High-Level Combat Intuition",
+				description:
+					"Possesses extraordinary physical durability and speed, allowing him to survive a direct encounter with Satoru Gojo.",
+			},
+		],
+		grade: "Grade 1", // Equivalent to a high-ranking sorcerer
+	},
+	{
+		id: "cp-040",
+		characterId: 184439, // Jiro Awasaka
+		ownerName: "Jiro Awasaka",
+		techniqueName: "Inverse",
+		type: "Innate Technique",
+		description:
+			"A powerful defensive technique that reverses the force of attacks; strong hits become weak, while weak hits become strong.",
+		abilities: [
+			{
+				name: "Damage Inversion",
+				description:
+					"Allows the user to shrug off devastating blows from powerful sorcerers, though it leaves them vulnerable to light, calculated taps.",
+			},
+		],
+		grade: "Grade 2", // Dangerous curse user
+	},
+	{
+		id: "cp-041",
+		characterId: 232264, // Bayer
+		ownerName: "Bayer",
+		techniqueName: "Cursed Tool Mastery",
+		type: "Innate Technique",
+		description:
+			"The most skilled member of the 'Q' organization who utilizes specialized combat skills and cursed tools.",
+		abilities: [
+			{
+				name: "Combat Proficiency",
+				description:
+					"A master of close-quarters combat, though he was quickly defeated by Satoru Gojo's overwhelming power.",
+			},
+		],
+		grade: "Grade 1", // Elite operative of Q
+	},
+	{
+		id: "cp-042",
+		characterId: 235334, // Niji Ebina
+		ownerName: "Niji Ebina",
+		techniqueName: "Shikigami Manipulation",
+		type: "Innate Technique",
+		description: "A member of the 'Q' organization who can summon and control large, insect-like cursed spirits.",
+		abilities: [
+			{
+				name: "Shikigami Summon",
+				description: "Manifests a massive insectoid shikigami to attack enemies or provide defensive cover.",
+			},
+		],
+		grade: "Grade 2",
+	},
+	{
+		id: "cp-043",
+		characterId: 235327, // Ogami (Elderly Curse User)
+		ownerName: "Ogami",
+		techniqueName: "Seance Technique",
+		type: "Innate Technique",
+		description:
+			"Allows the user to transform themselves or a willing participant into a deceased person by consuming their remains.",
+		abilities: [
+			{
+				name: "Body Seance",
+				description:
+					"Manifests the physical information and raw power of a dead person into a living vessel, as seen with Toji Fushiguro.",
+			},
+		],
+		grade: "Grade 2", // Specialized support antagonist
+	},
+	{
+		id: "cp-044",
+		characterId: 234682, // ID khusus untuk Assassin dari grup Q
+		ownerName: "Elderly Curse User (Q Assassin)",
+		techniqueName: "Paper Shikigami Manipulation",
+		type: "Innate Technique",
+		description: "A technique that uses cursed paper charms to manifest and control multiple bird-like shikigami.",
+		abilities: [
+			{
+				name: "Paper Bird Swarm",
+				description:
+					"Creates a large number of shikigami from paper to overwhelm the opponent and obscure their vision.",
+			},
+		],
+		grade: "Grade 3", // Easily defeated by Suguru Geto
+	},
+	{
+		id: "cp-045",
+		characterId: 247813, // Housoba (Smallpox Deity)
+		ownerName: "Housoba",
+		techniqueName: "Graveyard Orbit",
+		type: "Innate Technique",
+		description:
+			"A specialized domain-based technique used by the Special Grade Disease Curse to trap targets in a lethal cycle of burial.",
+		abilities: [
+			{
+				name: "Three-Count Burial",
+				description:
+					"Traps the target in a coffin, buries it with a giant gravestone, and starts a three-second countdown; if not escaped, the target dies of smallpox.",
+			},
+		],
+		domainExpansion: {
+			name: "Graveyard Orbit",
+			description: "A simple yet deadly domain that automates its burial technique to ensure a guaranteed hit.",
+			appearance: "A desolate, dark graveyard filled with massive tombstones.",
+		},
+		grade: "Special Grade",
+	},
+	{
+		id: "cp-046",
+		characterId: 234839, // Kou-Guy
+		ownerName: "Kou-Guy",
+		techniqueName: "Cursed Energy Compression",
+		type: "Innate Technique",
+		description:
+			"One of the curse users who attempted to claim the bounty on Riko Amanai, focusing on raw cursed energy output.",
+		abilities: [
+			{
+				name: "Energy Blast",
+				description: "Compresses cursed energy into concentrated bursts to strike targets from a distance.",
+			},
+		],
+		grade: "Grade 3",
+	},
+	{
+		id: "cp-047",
+		characterId: 232265, // Kokun
+		ownerName: "Kokun",
+		techniqueName: "Reinforced Physicality",
+		type: "Innate Technique",
+		description: "A bounty hunter who works alongside Kou-Guy, specializing in ambushing sorcerers.",
+		abilities: [
+			{
+				name: "Ambush Strike",
+				description: "Utilizes speed and sudden bursts of cursed energy to overwhelm non-combatants.",
+			},
+		],
+		grade: "Grade 3",
+	},
+	{
+		id: "cp-048",
+		characterId: 189229, // Misato Kuroi
+		ownerName: "Misato Kuroi",
+		techniqueName: "Basic Barrier Techniques",
+		type: "Barrier Technique",
+		description:
+			"The dedicated caretaker of the Star Plasma Vessel, trained in basic Jujutsu to protect her charge.",
+		abilities: [
+			{
+				name: "Cursed Tool Combat",
+				description:
+					"Skilled in using simple cursed tools and basic hand-to-hand combat to fend off minor threats.",
+			},
+		],
+		grade: "Non-Sorcerer",
+	},
+	{
+		id: "cp-049",
+		characterId: 240069, // Eight-Handled Sword Divergent Sila Divine General Mahoraga
+		ownerName: "Mahoraga",
+		techniqueName: "Eight-Handled Sword Divergent Sila",
+		type: "Shikigami Ability",
+		description:
+			"The most powerful shikigami of the Ten Shadows Technique, known for its ability to adapt to any and all phenomena.",
+		abilities: [
+			{
+				name: "Dharma Wheel Adaptation",
+				description:
+					"The wheel on its head spins to adapt to any attack or environment. Once adapted, the previous attack becomes useless against it.",
+			},
+			{
+				name: "Sword of Extermination",
+				description:
+					"A blade attached to its arm clad in positive energy, specifically designed to vaporize cursed spirits instantly.",
+			},
+		],
+		grade: "Special Grade",
+	},
+	{
+		id: "cp-050",
+		characterId: 235499, // Ogami's Grandson
+		ownerName: "Ogami's Grandson",
+		techniqueName: "Seance Vessel",
+		type: "Innate Technique",
+		description:
+			"Acts as a physical medium for his grandmother's Seance Technique, allowing his body to be overwritten by the physical data of the deceased.",
+		abilities: [
+			{
+				name: "Body Transformation",
+				description:
+					"Consumes a piece of a dead person's remains to take on their physical appearance and raw physical power (notably used for Toji Fushiguro).",
+			},
+		],
+		grade: "Grade 3", // Based on his own combat skill
+	},
+	{
+		id: "cp-051",
+		characterId: 275514, // Paper Bag Sorcerer (Kumabayer)
+		ownerName: "Paper Bag Sorcerer",
+		techniqueName: "Cloning Technique",
+		type: "Innate Technique",
+		description:
+			"A mysterious curse user working for the Q organization who can create multiple autonomous clones of himself.",
+		abilities: [
+			{
+				name: "Multi-Cloning",
+				description:
+					"Creates up to five identical clones that can act independently, making it difficult for opponents to identify the original body.",
+			},
+		],
+		grade: "Grade 2",
+	},
+	{
+		id: "cp-052",
+		characterId: 233426, // Shigeru Sonoda
+		ownerName: "Shigeru Sonoda",
+		techniqueName: "Non-Sorcerer Management",
+		type: "None",
+		description:
+			"The representative of the Bansei Council within the Star Religious Group. He lacks cursed techniques but possesses immense political and financial influence.",
+		abilities: [
+			{
+				name: "Organizational Leadership",
+				description:
+					"Orchestrated the bounty on Riko Amanai and managed the religious fanatics of the Time Vessel Association.",
+			},
+		],
+		grade: "Non-Sorcerer",
+	},
+	{
+		id: "cp-053",
+		characterId: 213191, // Manami Suda
+		ownerName: "Manami Suda",
+		techniqueName: "Cursed Energy Manipulation",
+		type: "Innate Technique",
+		description:
+			"One of Suguru Geto's most loyal commanders who manages the logistical and financial operations of his organization.",
+		abilities: [
+			{
+				name: "Support Sorcery",
+				description:
+					"While primarily an administrator, she is a capable curse user who assists in large-scale operations and strategic planning.",
+			},
+		],
+		grade: "Grade 2",
+	},
+	{
+		id: "cp-054",
+		characterId: 228716, // Ui Ui
+		ownerName: "Ui Ui",
+		techniqueName: "Teleportation Technique",
+		type: "Innate Technique",
+		description:
+			"A highly sophisticated spatial technique that allows the user to teleport themselves and others over vast distances instantly.",
+		abilities: [
+			{
+				name: "Spatial Teleportation",
+				description:
+					"Can swap the positions of people or objects, or move them to a marked location, making him the ultimate support asset.",
+			},
+			{
+				name: "Simple Domain",
+				description:
+					"Capable of deploying a Simple Domain to protect himself and his sister from the guaranteed-hit effects of an enemy's Domain Expansion.",
+			},
+		],
+		grade: "Grade 2", // High-level utility sorcerer
 	},
 ];
