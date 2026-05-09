@@ -63,7 +63,9 @@ export default function TechniqueAccordion({ powers }: Props) {
 							</div>
 
 							{/* Abilities List */}
-							<div className="grid gap-4 md:grid-cols-2">
+							<div
+								className={`grid gap-4 ${power.domainExpansion ? "md:grid-cols-2" : "md:grid-cols-1"}`}
+							>
 								<div className="space-y-3">
 									<h4 className="flex items-center gap-2 text-sm font-bold text-jjk-accent uppercase tracking-wider">
 										<Target size={16} />
