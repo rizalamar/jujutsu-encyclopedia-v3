@@ -1,6 +1,7 @@
 import Poster1 from "../assets/jjk-seaon-1-poster.jpg";
 import Poster0 from "../assets/jjk-movie-0-poster.jpg";
 import Poster2 from "../assets/jjk-season2-poster.jpg";
+import Poster3 from "../assets/jjk-season-3-poster.jpg";
 
 export const JJK_SHOWS = [
 	{
@@ -29,5 +30,14 @@ export const JJK_SHOWS = [
 		image: Poster2,
 		description: "Exploring Gojo's past and the devastating Shibuya Incident.",
 		accent: "border-red-500/30 shadow-red-500/10",
+	},
+	{
+		id: 57658,
+		title: "Jujutsu Kaisen Season 3",
+		year: "2026",
+		type: "TV Series",
+		image: Poster3,
+		description: "The upcoming Culling Game arc where sorcerers are forced into a deadly battle royale.",
+		accent: "border-jjk-accent/30 shadow-jjk-accent/10",
 	},
 ];

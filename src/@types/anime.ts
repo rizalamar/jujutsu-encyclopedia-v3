@@ -17,11 +17,15 @@ export interface Studio {
 }
 
 export interface Trailer {
-	youtube_id: string;
-	url: string;
-	embed_url: string;
+	youtube_id: string | null;
+	url: string | null;
+	embed_url: string | null;
 	images: {
-		maximum_image_url: string;
+		image_url: string | null;
+		small_image_url: string | null;
+		medium_image_url: string | null;
+		large_image_url: string | null;
+		maximum_image_url: string | null;
 	};
 }
 
