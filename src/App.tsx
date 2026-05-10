@@ -3,7 +3,6 @@ import Home from "./pages/HomePage";
 import Navbar from "./components/layout/Navbar";
 import CharacterPage from "./pages/CharacterPage";
 import CharacterDetailPage from "./pages/CharacterDetailPage";
-import ShowPage from "./pages/ShowPage";
 import FavoritesPage from "./pages/FavoritesPage";
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/characters" element={<CharacterPage />} />
 					<Route path="/characters/:id" element={<CharacterDetailPage />} />
-					<Route path="/shows" element={<ShowPage />} />
 					<Route path="/favorites" element={<FavoritesPage />} />
 				</Routes>
 			</div>

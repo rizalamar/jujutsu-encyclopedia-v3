@@ -1,15 +1,16 @@
-import { Calendar, Monitor, PlayCircle, Star } from "lucide-react";
+import { Award, Calendar, Hash, Monitor, PlayCircle, Star, TrendingUp, Users } from "lucide-react";
 import Error from "../components/ui/Error";
 import Loading from "../components/ui/Loading";
 import { useAnimeJJK } from "../hooks/useAnimeJJK";
-import heroImage from "../assets/poster.jpg";
 import JujutsuPowerSystem from "../components/ui/JujutsuPowerSystem";
 import { useNavigate } from "react-router-dom";
 import { JJK_SHOWS } from "../data/shows";
 
 export default function Home() {
-	const { data, loading, error } = useAnimeJJK();
+	const { data, loading, error, currentId, setCurrentId } = useAnimeJJK();
 	const navigate = useNavigate();
+
+	const activeShow = JJK_SHOWS.find((show) => show.id === currentId);
 
 	if (loading) {
 		return <Loading summon="Loading Cursed Energy..." />;
@@ -21,118 +22,145 @@ export default function Home() {
 
 	return (
 		<div className="min-h-screen text-white bg-jjk-dark">
-			{/* General Hero Section */}
-			<section className="relative h-[85vh] w-full overflow-hidden flex flex-col md:flex-row">
-				{/* Left Side: Content */}
-				<div className="relative z-20 flex flex-col justify-center h-full px-8 py-12 md:w-1/2 md:px-16 lg:w-2/5 bg-jjk-dark">
-					<div className="flex items-center gap-4 mb-4 text-xs font-medium tracking-widest uppercase text-jjk-accent/80">
-						<span>Supernatural | Action | Dark Fantasy</span>
-
-						<span className="rounded border border-jjk-accent/30 px-2 py-0.5">Franchise Portal</span>
-					</div>
-
-					<h1 className="mb-4 text-5xl font-bold tracking-tight font-space md:text-6xl lg:text-7xl">
-						{data.title_english || data.title}
-					</h1>
-
-					<div className="flex items-center gap-2 mb-6">
-						<div className="flex text-yellow-500">
-							{[...Array(5)].map((_, i) => (
-								<Star key={i} size={16} fill="currentColor" />
-							))}
-						</div>
-						<span className="ml-2 font-bold text-jjk-accent">World's Top Rated Series</span>
-					</div>
-
-					<p className="mb-10 text-base leading-relaxed text-gray-400 line-clamp-4">
-						In a world where negative human emotions manifest as deadly Cursed Spirits, secret Jujutsu
-						Sorcerers stand as the only line of defense. Follow the journey of sorcerers as they navigate a
-						world of domain expansions, cursed techniques, and the search for Sukuna's fingers.
-					</p>
-
-					<div className="flex flex-wrap gap-4">
-						<button
-							onClick={() => navigate("/shows")}
-							className="flex items-center gap-2 px-8 py-3 font-bold transition-all rounded-full cursor-pointer bg-jjk-accent text-jjk-dark hover:scale-105 hover:shadow-[0_0_20px_rgba(0,210,255,0.4)]"
-						>
-							<PlayCircle size={23} />
-							<span>Explore Chronicles</span>
-						</button>
-					</div>
+			{/* HERO SECTION */}
+			<section className="relative flex flex-col justify-center w-full h-screen overflow-hidden">
+				{/* Dynamic Background */}
+				<div className="absolute inset-0 z-0">
+					<img
+						src={activeShow.image}
+						alt="Background"
+						className="w-full h-full object-cover object-center transition-all duration-300 brightness-[0.3]"
+					/>
+					<div className="absolute inset-0 bg-linear-to-r from-jjk-dark via-jjk-dark/40 to-transparent" />
+					<div className="absolute inset-0 bg-linear-to-t from-jjk-dark via-transparent to-transparent" />
 				</div>
 
-				{/* Right Side: Image with focused positioning */}
-				<div className="relative h-[50vh] md:h-full md:w-1/2 lg:w-3/5 overflow-hidden">
-					<img
-						src={heroImage}
-						alt={data.title}
-						className="object-cover w-full h-full object-[center_5%] transition-transform duration-1000 hover:scale-110"
-					/>
-					{/* Gradient Masks */}
-					<div className="absolute inset-0 bg-linear-to-t from-jjk-dark via-jjk-dark/20 to-transparent" />
-					<div className="absolute inset-0 bg-linear-to-r from-jjk-dark via-jjk-dark/20 to-transparent" />
+				<div className="relative z-20 max-w-5xl px-8 md:px-16">
+					{/* 1. Chapter Selector (Tabs) */}
+					<div className="flex flex-wrap gap-3 mb-8">
+						{JJK_SHOWS.map((show) => (
+							<button
+								key={show.id}
+								onClick={() => setCurrentId(show.id)}
+								className={`px-5 py-2 rounded-lg text-[10px] font-black tracking-[0.2em] uppercase transition-all border cursor-pointer ${
+									currentId === show.id
+										? "bg-jjk-accent border-jjk-accent text-jjk-dark shadow-[0_0_15px_rgba(0,210,255,0.4)]"
+										: "bg-white/5 border-white/10 text-gray-400 hover:border-white/30"
+								}`}
+							>
+								{show.title}
+							</button>
+						))}
+					</div>
+
+					{loading ? (
+						<div className="space-y-6 animate-pulse">
+							<div className="w-3/4 h-20 bg-white/10 rounded-2xl" />
+							<div className="w-full h-32 bg-white/10 rounded-2xl" />
+						</div>
+					) : (
+						data && (
+							<div className="duration-700 animate-in fade-in slide-in-from-left-8">
+								<div className="flex items-center gap-4 mb-4 text-xs font-bold tracking-[0.3em] uppercase text-jjk-accent">
+									<span className="flex items-center gap-2">
+										<Monitor size={14} /> {data.type}
+									</span>
+									<span className="w-1 h-1 rounded-full bg-white/30" />
+									<span>{data.status}</span>
+								</div>
+
+								<h1 className="mb-6 text-6xl md:text-8xl font-black tracking-tighter font-space uppercase italic leading-[0.9]">
+									{data.title_english || data.title}
+								</h1>
+
+								<p className="max-w-3xl mb-10 text-lg font-medium leading-relaxed text-gray-300 md:text-xl line-clamp-3">
+									{data.synopsis}
+								</p>
+
+								<button
+									onClick={() => navigate(`/characters?animeId=${currentId}`)}
+									className="flex items-center gap-4 px-10 py-5 text-sm font-black tracking-widest uppercase transition-all bg-white group text-jjk-dark rounded-xl hover:bg-jjk-accent hover:scale-105"
+								>
+									<PlayCircle size={24} />
+									<span>Explore Characters</span>
+								</button>
+							</div>
+						)
+					)}
 				</div>
 			</section>
+			{/* 2. FRANCHISE DOSSIER (Stats) */}
+			{!loading && data && (
+				<section className="relative px-8 py-24 border-t md:px-16 border-white/50">
+					<div
+						className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-6 py-2 bg-jjk-dark border border-white/50 rounded-full text-sm font-black tracking-[0.3em] text-white
+   uppercase"
+					>
+						Anime Information
+					</div>
 
-			{/* Cinematic Franchise Stats */}
-			<section className="relative z-30 px-8 -mt-10 md:px-16">
-				<div className="py-10 bg-jjk-dark/80 backdrop-blur-xl border-y border-white/5">
-					<div className="flex flex-wrap justify-between mx-auto max-w-7xl gap-y-10">
-						{/* Stat Item 1 */}
-						<div className="flex flex-col items-center justify-center px-6 min-w-[150px] border-r border-white/5 last:border-0 flex-1">
-							<span className="text-xs font-bold tracking-[0.3em] text-gray-500 uppercase mb-2">
-								Global Rank
-							</span>
-							<div className="relative">
-								<h2 className="text-4xl font-black md:text-5xl text-jjk-accent font-space">
-									#{data.rank}
-								</h2>
-								<div className="absolute rounded-full -inset-2 bg-jjk-accent/20 blur-xl -z-10" />
+					<div className="grid grid-cols-1 gap-16 lg:grid-cols-12">
+						{/* Info List */}
+
+						<div className="space-y-12 lg:col-span-7">
+							<div className="pt-10 border-t border-white/50">
+								<p className="text-[10px] font-black text-jjk-accent uppercase tracking-[0.3em] mb-4">
+									Classification Tags
+								</p>
+								<div className="flex flex-wrap gap-2">
+									{data.genres.map((g) => (
+										<span
+											key={g.mal_id}
+											className="px-4 py-2 bg-jjk-blue border border-jjk-blue/20 rounded-md text-[11px] font-bold text-white uppercase"
+										>
+											{g.name}
+										</span>
+									))}
+								</div>
+							</div>
+
+							<div className="grid grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-4">
+								<DossierItem label="Studios" value="Studio MAPPA" />
+								<DossierItem label="Source" value={data.source} />
+								<DossierItem label="Rating" value={data.rating} />
+								<DossierItem label="Release" value={`${data.season || ""} ${data.year || ""}`} />
+								<DossierItem label="Episodes" value={data.episodes || "TBA"} />
+								<DossierItem label="Duration" value={data.duration} />
 							</div>
 						</div>
 
-						{/* Stat Item 2 */}
-						<div className="flex flex-col items-center justify-center px-6 min-w-[150px] border-r border-white/5 last:border-0 flex-1">
-							<span className="text-xs font-bold tracking-[0.3em] text-gray-500 uppercase mb-2">
-								MAL Score
-							</span>
-							<h2 className="text-4xl font-black text-white md:text-5xl font-space">{data.score}</h2>
-						</div>
+						{/* Big Stats */}
+						<div className="relative flex flex-col justify-between p-10 overflow-hidden border lg:col-span-5 bg-white/2 border-white/5 rounded-3xl">
+							<div className="absolute top-0 right-0 p-4 opacity-[0.03]">
+								<Award size={200} />
+							</div>
 
-						{/* Stat Item 3 */}
-						<div className="flex flex-col items-center justify-center px-6 min-w-[150px] border-r border-white/5 last:border-0 flex-1">
-							<span className="text-xs font-bold tracking-[0.3em] text-gray-500 uppercase mb-2">
-								Episodes
-							</span>
-							<h2 className="text-4xl font-black text-white md:text-5xl font-space">
-								47<span className="text-jjk-accent">+</span>
-							</h2>
-						</div>
-
-						{/* Stat Item 4 */}
-						<div className="flex flex-col items-center justify-center px-6 min-w-[150px] border-r border-white/5 last:border-0 flex-1">
-							<span className="text-xs font-bold tracking-[0.3em] text-gray-500 uppercase mb-2">
-								Members
-							</span>
-							<h2 className="text-4xl font-black text-white md:text-5xl font-space">
-								{(data.members / 1000000).toFixed(1)}
-								<span className="ml-1 text-sm text-gray-500">M</span>
-							</h2>
-						</div>
-
-						{/* Stat Item 5 */}
-						<div className="flex flex-col items-center justify-center px-6 min-w-[150px] last:border-0 flex-1">
-							<span className="text-xs font-bold tracking-[0.3em] text-gray-500 uppercase mb-2">
-								Studio
-							</span>
-							<h2 className="text-4xl font-black tracking-tighter text-white md:text-5xl font-space">
-								MAPPA
-							</h2>
+							<div className="space-y-10">
+								<StatRow
+									icon={<Star className="text-yellow-500" />}
+									label="MAL Score"
+									value={data.score}
+								/>
+								<StatRow
+									icon={<Hash className="text-jjk-accent" />}
+									label="Global Rank"
+									value={`#${data.rank}`}
+								/>
+								<StatRow
+									icon={<TrendingUp className="text-green-500" />}
+									label="Popularity"
+									value={`#${data.popularity}`}
+								/>
+								<StatRow
+									icon={<Users className="text-purple-500" />}
+									label="Members"
+									value={(data.members / 1000000).toFixed(2) + "M"}
+								/>
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-
+				</section>
+			)}{" "}
 			<section className="px-8 py-20 md:px-16 bg-jjk-blue/5">
 				<div className="mb-12">
 					<h2 className="mb-2 text-3xl italic font-bold tracking-tighter uppercase font-space">
@@ -147,7 +175,7 @@ export default function Home() {
 					{JJK_SHOWS.map((show) => (
 						<div
 							key={show.id}
-							onClick={() => navigate(`/characters/animeId=${show.id}`)}
+							onClick={() => navigate(`/characters?animeId=${show.id}`)}
 							className={`group relative cursor-pointer overflow-hidden rounded-2xl border bg-jjk-dark transition-all duration-300 ${show.accent} hover:-translate-y-2`}
 						>
 							<div className="overflow-hidden aspect-3/4">
@@ -169,7 +197,6 @@ export default function Home() {
 					))}
 				</div>
 			</section>
-
 			<section className="px-8 py-16 md:px-16 bg-jjk-dark/50">
 				<div className="mb-12">
 					<h2 className="pl-6 mb-2 text-3xl font-bold tracking-tighter border-l-8 font-space border-jjk-accent">
@@ -183,6 +210,28 @@ export default function Home() {
 
 				<JujutsuPowerSystem />
 			</section>
+		</div>
+	);
+}
+
+// Sub-components
+function DossierItem({ label, value }: { label: string; value: string | number }) {
+	return (
+		<div className="space-y-1">
+			<p className="text-[10px] font-black text-gray-500 uppercase tracking-widest">{label}</p>
+			<p className="text-base font-bold text-gray-200">{value}</p>
+		</div>
+	);
+}
+
+function StatRow({ icon, label, value }: { icon: React.ReactNode; label: string; value: string | number }) {
+	return (
+		<div className="flex items-center justify-between">
+			<div className="flex items-center gap-4">
+				<div className="p-2 rounded-lg bg-white/5">{icon}</div>
+				<span className="text-xs font-black tracking-widest text-gray-500 uppercase">{label}</span>
+			</div>
+			<span className="text-3xl italic font-black font-space">{value}</span>
 		</div>
 	);
 }

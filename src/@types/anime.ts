@@ -55,7 +55,7 @@ export interface JJKData {
 	rank: number;
 	popularity: number;
 	synopsis: string;
-	member: number;
+	members: number;
 	year: number;
 	studios: Studio[];
 	genres: Genre[];
