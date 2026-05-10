@@ -3,12 +3,10 @@ import Error from "../components/ui/Error";
 import Loading from "../components/ui/Loading";
 import { useAnimeJJK } from "../hooks/useAnimeJJK";
 import heroImage from "../assets/poster.jpg";
-import TechniqueAccordion from "../components/ui/TechniqueAccordion";
-import { cursedTechniques } from "../data/cursedTechniques";
+import JujutsuPowerSystem from "../components/ui/JujutsuPowerSystem";
 
 export default function Home() {
 	const { data, loading, error } = useAnimeJJK();
-	const filteredCursedTechnique = cursedTechniques.slice(0, 4);
 
 	if (loading) {
 		return <Loading summon="Loading Cursed Energy..." />;
@@ -119,13 +117,16 @@ export default function Home() {
 
 			<section className="px-8 py-16 md:px-16 bg-jjk-dark/50">
 				<div className="mb-12">
-					<h2 className="mb-2 text-3xl font-bold font-space">System of Power</h2>
+					<h2 className="mb-2 text-3xl font-bold font-space tracking-tighter border-l-8 border-jjk-accent pl-6">
+						System of Power
+					</h2>
 					<p className="text-gray-400">
-						Deep dive into the cursed techniques and innate abilities of Jujutsu Kaisen Characters.
+						A comprehensive guide to the mystical laws, energy sources, and deadly techiniques that govern
+						the world of Jujutsu.
 					</p>
 				</div>
 
-				<TechniqueAccordion powers={filteredCursedTechnique} />
+				<JujutsuPowerSystem />
 			</section>
 		</div>
 	);
