@@ -1,11 +1,16 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import type { GradeLore } from "../@types/gradingLore.types";
 import { gradingLoreData } from "../data/gradingLoreData";
 import { ShieldAlert, User, Zap } from "lucide-react";
 import CharacterThumbnail from "../components/grades/ui/CharacterThumbnail";
+import { cursedTechniques } from "../data/cursedTechniques";
 
 export default function GradingPage() {
 	const [activeGrade, setActiveGrade] = useState<GradeLore>(gradingLoreData[0]);
+
+	const gradeSorcerers = useMemo(() => {
+		return cursedTechniques.filter((char) => char.grade === activeGrade.grade).slice(0, 8);
+	}, [activeGrade]);
 
 	return (
 		<main className="flex min-h-screen pt-24 pb-20 text-white bg-jjk-dark">
@@ -75,8 +80,8 @@ export default function GradingPage() {
 					</div>
 
 					<div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-						{activeGrade.iconicIds.map((id) => (
-							<CharacterThumbnail key={id} id={id} />
+						{gradeSorcerers.map((char) => (
+							<CharacterThumbnail key={char.characterId} id={char.characterId} />
 						))}
 					</div>
 				</div>
