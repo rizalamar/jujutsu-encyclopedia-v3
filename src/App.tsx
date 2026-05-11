@@ -4,6 +4,7 @@ import Navbar from "./components/layout/Navbar";
 import CharacterPage from "./pages/CharacterPage";
 import CharacterDetailPage from "./pages/CharacterDetailPage";
 import FavoritesPage from "./pages/FavoritesPage";
+import GradingPage from "./pages/GradingPage";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/characters" element={<CharacterPage />} />
 					<Route path="/characters/:id" element={<CharacterDetailPage />} />
+					<Route path="/grades" element={<GradingPage />} />
 					<Route path="/favorites" element={<FavoritesPage />} />
 				</Routes>
 			</div>
