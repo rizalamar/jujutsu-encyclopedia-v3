@@ -29,6 +29,13 @@ export interface Trailer {
 	};
 }
 
+export interface Producers {
+	mal_id: number;
+	type: string;
+	name: string;
+	url: string;
+}
+
 export interface JJKData {
 	mal_id: number;
 	url: string;
@@ -48,12 +55,19 @@ export interface JJKData {
 		to: string;
 		string: string;
 	};
+	demographics: {
+		mal_id: number;
+		type: string;
+		name: string;
+		url: string;
+	}[];
 	duration: string;
 	rating: string;
 	score: number;
 	scored_by: number;
 	rank: number;
 	popularity: number;
+	producers: Producers[];
 	synopsis: string;
 	members: number;
 	year: number;

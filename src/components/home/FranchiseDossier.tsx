@@ -23,33 +23,6 @@ export default function FranchiseDossier({ data, loading }: Props) {
 			<div className="grid grid-cols-1 gap-16 lg:grid-cols-12">
 				{/* Info List */}
 
-				<div className="space-y-12 lg:col-span-7">
-					<div className="pt-10 border-t border-white/50">
-						<p className="text-[10px] font-black text-jjk-accent uppercase tracking-[0.3em] mb-4">
-							Classification Tags
-						</p>
-						<div className="flex flex-wrap gap-2">
-							{data.genres.map((g) => (
-								<span
-									key={g.mal_id}
-									className="px-4 py-2 bg-jjk-blue border border-jjk-blue/20 rounded-md text-[11px] font-bold text-white uppercase"
-								>
-									{g.name}
-								</span>
-							))}
-						</div>
-					</div>
-
-					<div className="grid grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-4">
-						<DossierItem label="Studios" value="Studio MAPPA" />
-						<DossierItem label="Source" value={data.source} />
-						<DossierItem label="Rating" value={data.rating} />
-						<DossierItem label="Release" value={`${data.season || ""} ${data.year || ""}`} />
-						<DossierItem label="Episodes" value={data.episodes || "TBA"} />
-						<DossierItem label="Duration" value={data.duration} />
-					</div>
-				</div>
-
 				{/* Big Stats */}
 				<div className="relative flex flex-col justify-between p-10 overflow-hidden border lg:col-span-5 bg-white/2 border-white/5 rounded-3xl">
 					<div className="absolute top-0 right-0 p-4 opacity-[0.03]">
@@ -73,6 +46,50 @@ export default function FranchiseDossier({ data, loading }: Props) {
 							label="Members"
 							value={(data.members / 1000000).toFixed(2) + "M"}
 						/>
+					</div>
+				</div>
+
+				{/* Basic Information */}
+				<div className="space-y-12 lg:col-span-7">
+					<div className="">
+						<p className="text-sm font-black text-jjk-accent uppercase tracking-[0.3em] mb-4">Genres</p>
+						<div className="flex flex-wrap gap-2">
+							{data.genres.map((g) => (
+								<span
+									key={g.mal_id}
+									className="px-4 py-2 bg-jjk-blue border border-jjk-blue/20 rounded-md text-[11px] font-bold text-white uppercase"
+								>
+									{g.name}
+								</span>
+							))}
+						</div>
+					</div>
+
+					<div className="grid grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-4">
+						<DossierItem label="Demographic" value={data.demographics.map((d) => d.name).join(", ")} />
+						<DossierItem label="Source" value={data.source} />
+						<DossierItem label="Rating" value={data.rating} />
+						<DossierItem
+							label="Release"
+							value={`${data.season || ""} ${data.year || ""}`}
+							className="capitalize"
+						/>
+						<DossierItem label="Episodes" value={data.episodes || "TBA"} />
+						<DossierItem label="Duration" value={data.duration} />
+						<DossierItem
+							label="Producers"
+							value={
+								<ul className="space-y-1">
+									{data.producers.map((p) => (
+										<li key={p.mal_id} className="text-sm">
+											{p.name}
+										</li>
+									))}
+								</ul>
+							}
+							className="row-span-2"
+						/>
+						<DossierItem label="Studios" value={data.studios.map((s) => s.name).join("")} />
 					</div>
 				</div>
 			</div>
