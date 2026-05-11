@@ -15,6 +15,24 @@
 	font-family: var(--font-space);
 }
 
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slide-in-right {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
 @layer utilities {
 	.text-neon {
 		text-shadow: 0 0 10px var(--color-jjk-accent), 0 0 20px var(--color-jjk-accent);
@@ -23,5 +41,19 @@
 		background: rgba(22, 34, 63, 0.7);
 		backdrop-filter: blur(12px);
 		border: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.animate-in {
+		animation-duration: 700ms;
+		animation-fill-mode: forwards;
+		animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.fade-in {
+		animation-name: fade-in;
+	}
+
+	.slide-in-right-10 {
+		animation-name: slide-in-right;
 	}
 }

@@ -29,7 +29,10 @@ export default function GradingPage() {
 			</div>
 
 			{/* Right: Tactical Display */}
-			<div className="flex-1 px-8 ml-24 duration-700 md:ml-32 md:px-16 animate-in fade-in slide-in-from-right-10">
+			<div
+				key={activeGrade.grade}
+				className="flex-1 px-8 ml-24 duration-700 md:ml-32 md:px-16 animate-in fade-in slide-in-right-10"
+			>
 				{/* Grader Header */}
 				<div className="mb-12">
 					<div className={`text-xs font-black tracking-[0.2em] uppercase mb-2 ${activeGrade.color}`}>
