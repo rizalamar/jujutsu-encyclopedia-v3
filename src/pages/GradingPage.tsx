@@ -1,12 +1,14 @@
 import { useMemo, useState } from "react";
 import type { GradeLore } from "../@types/gradingLore.types";
 import { gradingLoreData } from "../data/gradingLoreData";
-import { ShieldAlert, User, Zap } from "lucide-react";
+import { HelpCircle, ShieldAlert, User, Zap } from "lucide-react";
 import CharacterThumbnail from "../components/grades/ui/CharacterThumbnail";
 import { cursedTechniques } from "../data/cursedTechniques";
+import GradingInfoModal from "../components/grades/ui/GradingInfoModal";
 
 export default function GradingPage() {
 	const [activeGrade, setActiveGrade] = useState<GradeLore>(gradingLoreData[0]);
+	const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
 	const gradeSorcerers = useMemo(() => {
 		return cursedTechniques.filter((char) => char.grade === activeGrade.grade).slice(0, 8);
@@ -40,8 +42,17 @@ export default function GradingPage() {
 			>
 				{/* Grader Header */}
 				<div className="mb-12">
-					<div className={`text-xs font-black tracking-[0.2em] uppercase mb-2 ${activeGrade.color}`}>
-						Rank Classification
+					<div className="flex items-center gap-3 mb-2">
+						<div className={`text-xs font-black tracking-[0.2em] uppercase ${activeGrade.color}`}>
+							Rank Classification
+						</div>
+
+						<button
+							onClick={() => setIsModalOpen(true)}
+							className="p-2 text-gray-600 hover:text-jjk-accent transition-colors cursor-pointer"
+						>
+							<HelpCircle size={20} />
+						</button>
 					</div>
 					<h1 className="mb-6 text-6xl italic font-black leading-none tracking-tighter uppercase md:text-8xl font-space">
 						{activeGrade.grade}
@@ -86,6 +97,8 @@ export default function GradingPage() {
 					</div>
 				</div>
 			</div>
+
+			<GradingInfoModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 		</main>
 	);
 }

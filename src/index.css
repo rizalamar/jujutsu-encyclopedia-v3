@@ -33,6 +33,18 @@
 	}
 }
 
+@keyframes zoom-in {
+	from {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
 @layer utilities {
 	.text-neon {
 		text-shadow: 0 0 10px var(--color-jjk-accent), 0 0 20px var(--color-jjk-accent);
@@ -55,5 +67,17 @@
 
 	.slide-in-right-10 {
 		animation-name: slide-in-right;
+	}
+
+	.zoom-in {
+		animation-name: zoom-in;
+	}
+
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	.no-scrollbar {
+		scrollbar-width: none;
 	}
 }
