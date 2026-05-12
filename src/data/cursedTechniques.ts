@@ -885,7 +885,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 4", // Based on his brief time as a practitioner
 	},
 	{
-		id: "cp-034",
+		id: "doll-manipulation",
 		characterId: 189224, // Mimiko Hasaba
 		ownerName: "Mimiko Hasaba",
 		techniqueName: "Doll Manipulation",
@@ -902,7 +902,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 2", // Follower of Geto
 	},
 	{
-		id: "cp-035",
+		id: "camera-manipulation",
 		characterId: 189225, // Nanako Hasaba
 		ownerName: "Nanako Hasaba",
 		techniqueName: "Camera Manipulation",
@@ -919,7 +919,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 2",
 	},
 	{
-		id: "cp-036",
+		id: "new-shadow-style",
 		characterId: 184437, // Atsuya Kusakabe
 		ownerName: "Atsuya Kusakabe",
 		techniqueName: "New Shadow Style",
@@ -941,7 +941,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1",
 	},
 	{
-		id: "cp-037",
+		id: "heart-catch",
 		characterId: 189226, // Larue
 		ownerName: "Larue",
 		techniqueName: "Heart Catch",
@@ -958,7 +958,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1", // Former member of Geto's inner circle
 	},
 	{
-		id: "cp-038",
+		id: "cursed-energy-strike",
 		characterId: 237184, // Toshihisa Negi
 		ownerName: "Toshihisa Negi",
 		techniqueName: "Cursed Energy Strike",
@@ -975,7 +975,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 2", // Member of Geto's inner circle
 	},
 	{
-		id: "cp-039",
+		id: "hakuna-matata",
 		characterId: 189227, // Miguel Oduol
 		ownerName: "Miguel Oduol",
 		techniqueName: "Hakuna Matata (Cursed Tool Mastery)",
@@ -997,7 +997,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1", // Equivalent to a high-ranking sorcerer
 	},
 	{
-		id: "cp-040",
+		id: "inverse",
 		characterId: 184439, // Jiro Awasaka
 		ownerName: "Jiro Awasaka",
 		techniqueName: "Inverse",
@@ -1014,7 +1014,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 2", // Dangerous curse user
 	},
 	{
-		id: "cp-041",
+		id: "cursed-tool-mastery",
 		characterId: 232264, // Bayer
 		ownerName: "Bayer",
 		techniqueName: "Cursed Tool Mastery",
@@ -1031,7 +1031,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1", // Elite operative of Q
 	},
 	{
-		id: "cp-042",
+		id: "shikigami-manipulation",
 		characterId: 235334, // Niji Ebina
 		ownerName: "Niji Ebina",
 		techniqueName: "Shikigami Manipulation",
@@ -1046,7 +1046,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 2",
 	},
 	{
-		id: "cp-043",
+		id: "seance-technique",
 		characterId: 235327, // Ogami (Elderly Curse User)
 		ownerName: "Ogami",
 		techniqueName: "Seance Technique",
@@ -1063,7 +1063,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 2", // Specialized support antagonist
 	},
 	{
-		id: "cp-044",
+		id: "paper-shikigami-manipulation",
 		characterId: 234682, // ID khusus untuk Assassin dari grup Q
 		ownerName: "Elderly Curse User (Q Assassin)",
 		techniqueName: "Paper Shikigami Manipulation",
@@ -1079,7 +1079,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 3", // Easily defeated by Suguru Geto
 	},
 	{
-		id: "cp-045",
+		id: "graveyard-orbit",
 		characterId: 247813, // Housoba (Smallpox Deity)
 		ownerName: "Housoba",
 		techniqueName: "Graveyard Orbit",
@@ -1101,7 +1101,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Special Grade",
 	},
 	{
-		id: "cp-046",
+		id: "cursed-energy-compression",
 		characterId: 234839, // Kou-Guy
 		ownerName: "Kou-Guy",
 		techniqueName: "Cursed Energy Compression",
@@ -1117,7 +1117,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 3",
 	},
 	{
-		id: "cp-047",
+		id: "reinforced-physicality",
 		characterId: 232265, // Kokun
 		ownerName: "Kokun",
 		techniqueName: "Reinforced Physicality",
@@ -1132,7 +1132,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 3",
 	},
 	{
-		id: "cp-048",
+		id: "basic-barrier-techniques",
 		characterId: 189229, // Misato Kuroi
 		ownerName: "Misato Kuroi",
 		techniqueName: "Basic Barrier Techniques",
@@ -1149,7 +1149,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Non-Sorcerer",
 	},
 	{
-		id: "cp-049",
+		id: "eight-handled-sword-divergent-sila",
 		characterId: 240069, // Eight-Handled Sword Divergent Sila Divine General Mahoraga
 		ownerName: "Mahoraga",
 		techniqueName: "Eight-Handled Sword Divergent Sila",
@@ -1171,7 +1171,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Special Grade",
 	},
 	{
-		id: "cp-050",
+		id: "seance-vessel",
 		characterId: 235499, // Ogami's Grandson
 		ownerName: "Ogami's Grandson",
 		techniqueName: "Seance Vessel",
@@ -1188,7 +1188,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 3", // Based on his own combat skill
 	},
 	{
-		id: "cp-051",
+		id: "cloning-technique",
 		characterId: 275514, // Paper Bag Sorcerer (Kumabayer)
 		ownerName: "Paper Bag Sorcerer",
 		techniqueName: "Cloning Technique",
@@ -1205,7 +1205,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 2",
 	},
 	{
-		id: "cp-052",
+		id: "non-sorcerer-management",
 		characterId: 233426, // Shigeru Sonoda
 		ownerName: "Shigeru Sonoda",
 		techniqueName: "Non-Sorcerer Management",
@@ -1222,7 +1222,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Non-Sorcerer",
 	},
 	{
-		id: "cp-053",
+		id: "cursed-energy-manipulation",
 		characterId: 213191, // Manami Suda
 		ownerName: "Manami Suda",
 		techniqueName: "Cursed Energy Manipulation",
@@ -1239,7 +1239,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 2",
 	},
 	{
-		id: "cp-054",
+		id: "teleportation-technique",
 		characterId: 228716, // Ui Ui
 		ownerName: "Ui Ui",
 		techniqueName: "Teleportation Technique",
@@ -1261,7 +1261,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 2", // High-level utility sorcerer
 	},
 	{
-		id: "cp-055",
+		id: "sugar-manipulation",
 		characterId: 288063,
 		ownerName: "Rin Amai",
 		techniqueName: "Sugar Manipulation",
@@ -1278,7 +1278,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 3", // Berdasarkan kontribusi tempurnya
 	},
 	{
-		id: "cp-056",
+		id: "none",
 		characterId: 287594,
 		ownerName: "Furudate",
 		techniqueName: "None",
@@ -1295,7 +1295,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Non-Sorcerer", // Meskipun bisa jujutsu dasar, dia staff administratif
 	},
 	{
-		id: "cp-057",
+		id: "innate-technique",
 		characterId: 189233,
 		ownerName: "Tsumiki Fushiguro",
 		techniqueName: "Innate Technique (Vessel)",
@@ -1312,7 +1312,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1", // Karena potensinya sebagai vessel penyihir kuno
 	},
 	{
-		id: "cp-058",
+		id: "propeller-technique",
 		characterId: 288069,
 		ownerName: "Haba",
 		techniqueName: "Propeller Technique",
@@ -1329,7 +1329,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 2",
 	},
 	{
-		id: "cp-059",
+		id: "private-pure-love-train",
 		characterId: 203839,
 		ownerName: "Kinji Hakari",
 		techniqueName: "Private Pure Love Train",
@@ -1351,7 +1351,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Special Grade", // Setara karena keabadian sementaranya
 	},
 	{
-		id: "cp-060",
+		id: "propeller-technique",
 		characterId: 288067,
 		ownerName: "Chizuru Hari",
 		techniqueName: "Propeller Technique",
@@ -1367,7 +1367,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 2",
 	},
 	{
-		id: "cp-061",
+		id: "explosive-flesh",
 		characterId: 288066,
 		ownerName: "Iori Hazenoki",
 		techniqueName: "Explosive Flesh",
@@ -1385,7 +1385,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1",
 	},
 	{
-		id: "cp-062",
+		id: "executioner's-confiscation",
 		characterId: 203810,
 		ownerName: "Hiromi Higuruma",
 		techniqueName: "Executioner's Confiscation",
@@ -1406,7 +1406,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1", // Sangat kuat meski baru terbangkitkan
 	},
 	{
-		id: "cp-063",
+		id: "love-rendezvous",
 		characterId: 201644,
 		ownerName: "Kirara Hoshi",
 		techniqueName: "Love Rendezvous",
@@ -1424,7 +1424,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1", // Tekniknya sangat sulit dikalahkan tanpa strategi matang
 	},
 	{
-		id: "cp-064",
+		id: "cursed-energy-discharge",
 		characterId: 207600,
 		ownerName: "Ryu Ishigori",
 		techniqueName: "Cursed Energy Discharge",
@@ -1442,7 +1442,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1", // Setara Grade 1 spesial/kandidat Special Grade karena output energinya tertinggi.
 	},
 	{
-		id: "cp-065",
+		id: "none",
 		characterId: 238440,
 		ownerName: "Jin Itadori",
 		techniqueName: "None",
@@ -1454,7 +1454,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Non-Sorcerer",
 	},
 	{
-		id: "cp-066",
+		id: "none",
 		characterId: 188245,
 		ownerName: "Wasuke Itadori",
 		techniqueName: "None",
@@ -1466,7 +1466,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Non-Sorcerer",
 	},
 	{
-		id: "cp-067",
+		id: "antigravity-system",
 		characterId: 283296,
 		ownerName: "Kaori Itadori",
 		techniqueName: "Antigravity System",
@@ -1484,7 +1484,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1",
 	},
 	{
-		id: "cp-068",
+		id: "legal-procedure-enforcement",
 		characterId: 245297,
 		ownerName: "Judgeman",
 		techniqueName: "Legal Procedure Enforcement",
@@ -1502,7 +1502,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1",
 	},
 	{
-		id: "cp-069",
+		id: "mythic-beast-amber",
 		characterId: 204748,
 		ownerName: "Hajime Kashimo",
 		techniqueName: "Mythic Beast Amber",
@@ -1519,7 +1519,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Special Grade", // Mengingat kekuatannya sebagai penyihir terkuat di masanya.
 	},
 	{
-		id: "cp-070",
+		id: "body-hopping",
 		characterId: 196089,
 		ownerName: "Kenjaku",
 		techniqueName: "Body Hopping / Cursed Spirit Manipulation",
@@ -1546,7 +1546,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Special Grade",
 	},
 	{
-		id: "cp-071",
+		id: "game-administration",
 		characterId: 285877,
 		ownerName: "Kogane",
 		techniqueName: "Game Administration",
@@ -1564,7 +1564,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Non-Sorcerer",
 	},
 	{
-		id: "cp-072",
+		id: "cockroach-manipulation",
 		characterId: 208196,
 		ownerName: "Kuroourushi",
 		techniqueName: "Cockroach Manipulation",
@@ -1582,7 +1582,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Special Grade",
 	},
 	{
-		id: "cp-073",
+		id: "jacob's-ladder",
 		characterId: 199938,
 		ownerName: "Hana Kurusu",
 		techniqueName: "Jacob's Ladder",
@@ -1599,7 +1599,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Special Grade", // Karena statusnya sebagai vessel "Angel".
 	},
 	{
-		id: "cp-074",
+		id: "shikigami-orbit",
 		characterId: 288062,
 		ownerName: "Dhruv Lakdawalla",
 		techniqueName: "Shikigami Orbit",
@@ -1617,7 +1617,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1",
 	},
 	{
-		id: "cp-075",
+		id: "unconfirmed",
 		characterId: 291255,
 		ownerName: "Kieta Oor",
 		techniqueName: "Unconfirmed",
@@ -1629,7 +1629,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 3",
 	},
 	{
-		id: "cp-076",
+		id: "storage",
 		characterId: 189234,
 		ownerName: "Rika Orimoto",
 		techniqueName: "Cursed Energy Mimicry / Storage",
@@ -1647,7 +1647,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Special Grade",
 	},
 	{
-		id: "cp-077",
+		id: "contractual-reification",
 		characterId: 207021,
 		ownerName: "Reggie Star",
 		techniqueName: "Contractual Reification",
@@ -1664,7 +1664,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1",
 	},
 	{
-		id: "cp-078",
+		id: "comedian",
 		characterId: 228713,
 		ownerName: "Fumihiko Takaba",
 		techniqueName: "Comedian",
@@ -1682,7 +1682,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Special Grade", // Potentially the strongest technique in existence
 	},
 	{
-		id: "cp-079",
+		id: "barrier-technique",
 		characterId: 236446,
 		ownerName: "Tengen",
 		techniqueName: "Immortality",
@@ -1700,7 +1700,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Special Grade",
 	},
 	{
-		id: "cp-080",
+		id: "sky-manipulation",
 		characterId: 207779,
 		ownerName: "Takako Uro",
 		techniqueName: "Sky Manipulation",
@@ -1718,7 +1718,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1",
 	},
 	{
-		id: "cp-081",
+		id: "projection-sorcery",
 		characterId: 193907,
 		ownerName: "Naoya Zenin",
 		techniqueName: "Projection Sorcery",
@@ -1736,7 +1736,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1",
 	},
 	{
-		id: "cp-082",
+		id: "blazing-courage",
 		characterId: 248747,
 		ownerName: "Ogi Zenin",
 		techniqueName: "Blazing Courage",
@@ -1752,7 +1752,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1",
 	},
 	{
-		id: "cp-083",
+		id: "missile-fist",
 		characterId: 248901,
 		ownerName: "Jinichi Zenin",
 		techniqueName: "Missile Fist",
@@ -1768,7 +1768,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1",
 	},
 	{
-		id: "cp-084",
+		id: "glare",
 		characterId: 248898,
 		ownerName: "Ranta Zenin",
 		techniqueName: "Glare",
@@ -1785,7 +1785,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 2",
 	},
 	{
-		id: "cp-085",
+		id: "none",
 		characterId: 186825,
 		ownerName: "Setsuko Sasaki",
 		techniqueName: "None",
@@ -1796,7 +1796,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Non-Sorcerer",
 	},
 	{
-		id: "cp-086",
+		id: "earth-manipulation",
 		characterId: 248961,
 		ownerName: "Chojuro Zenin",
 		techniqueName: "Earth Manipulation",
@@ -1813,7 +1813,7 @@ export const cursedTechniques: CursedPower[] = [
 		grade: "Grade 1",
 	},
 	{
-		id: "cp-087",
+		id: "cursed-tool-mastery",
 		characterId: 248962,
 		ownerName: "Nobuaki Zenin",
 		techniqueName: "Unconfirmed (Cursed Tool Mastery)",
