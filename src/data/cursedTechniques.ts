@@ -1260,4 +1260,573 @@ export const cursedTechniques: CursedPower[] = [
 		],
 		grade: "Grade 2", // High-level utility sorcerer
 	},
+	{
+		id: "cp-055",
+		characterId: 288063,
+		ownerName: "Rin Amai",
+		techniqueName: "Sugar Manipulation",
+		type: "Innate Technique",
+		description:
+			"A technique that allows the user to manipulate sugar within their body and output it for various effects, such as stabilizing others.",
+		abilities: [
+			{
+				name: "Sugar Discharge",
+				description: "Emits sugar to help recover energy or stabilize someone's physical condition.",
+			},
+		],
+		status: "Active",
+		grade: "Grade 3", // Berdasarkan kontribusi tempurnya
+	},
+	{
+		id: "cp-056",
+		characterId: 287594,
+		ownerName: "Furudate",
+		techniqueName: "None",
+		type: "None",
+		description:
+			"An assistant director at Jujutsu High who specializes in administrative support and barrier deployment.",
+		abilities: [
+			{
+				name: "Curtain Deployment",
+				description: "The ability to cast a barrier that hides jujutsu activity from the non-sorcerer world.",
+			},
+		],
+		status: "Active",
+		grade: "Non-Sorcerer", // Meskipun bisa jujutsu dasar, dia staff administratif
+	},
+	{
+		id: "cp-057",
+		characterId: 189233,
+		ownerName: "Tsumiki Fushiguro",
+		techniqueName: "Innate Technique (Vessel)",
+		type: "Innate Technique",
+		description:
+			"Megumi's sister who became a vessel for an ancient sorcerer, granting her access to ancient cursed energy.",
+		abilities: [
+			{
+				name: "Cursed Energy Resonance",
+				description: "A heightened sensitivity and capacity for cursed energy following her awakening.",
+			},
+		],
+		status: "Active",
+		grade: "Grade 1", // Karena potensinya sebagai vessel penyihir kuno
+	},
+	{
+		id: "cp-058",
+		characterId: 288069,
+		ownerName: "Haba",
+		techniqueName: "Propeller Technique",
+		type: "Innate Technique",
+		description:
+			"Manifests mechanical propellers on the head, granting the user high-speed flight and cutting power.",
+		abilities: [
+			{
+				name: "Aerial Shredder",
+				description: "Uses the rotating blades to slice through opponents while maintaining aerial dominance.",
+			},
+		],
+		status: "Active",
+		grade: "Grade 2",
+	},
+	{
+		id: "cp-059",
+		characterId: 203839,
+		ownerName: "Kinji Hakari",
+		techniqueName: "Private Pure Love Train",
+		type: "Innate Technique",
+		description: "A complex technique based on a pachinko machine theme, revolving around probability and luck.",
+		abilities: [
+			{
+				name: "Infinite Cursed Energy",
+				description:
+					"Upon hitting a jackpot, his body overflows with infinite cursed energy, making him temporarily immortal.",
+			},
+		],
+		domainExpansion: {
+			name: "Idle Death Gamble",
+			description: "A non-lethal domain that forces a game of luck. Winning grants massive buffs.",
+			appearance: "A stylized train station inspired by romance manga.",
+		},
+		status: "Active",
+		grade: "Special Grade", // Setara karena keabadian sementaranya
+	},
+	{
+		id: "cp-060",
+		characterId: 288067,
+		ownerName: "Chizuru Hari",
+		techniqueName: "Propeller Technique",
+		type: "Innate Technique",
+		description: "A variant of the propeller technique that manifests blades on the user's limbs.",
+		abilities: [
+			{
+				name: "Limb Blade Strike",
+				description: "Uses propellers on hands and feet for rapid close-quarter slashing.",
+			},
+		],
+		status: "Active",
+		grade: "Grade 2",
+	},
+	{
+		id: "cp-061",
+		characterId: 288066,
+		ownerName: "Iori Hazenoki",
+		techniqueName: "Explosive Flesh",
+		type: "Innate Technique",
+		description:
+			"Allows the user to detach body parts (like teeth or eyes) and turn them into powerful explosives.",
+		abilities: [
+			{
+				name: "Flesh Bomb",
+				description:
+					"The user throws body parts that detonate with massive force, then regenerates them using RCT.",
+			},
+		],
+		status: "Active",
+		grade: "Grade 1",
+	},
+	{
+		id: "cp-062",
+		characterId: 203810,
+		ownerName: "Hiromi Higuruma",
+		techniqueName: "Executioner's Confiscation",
+		type: "Innate Technique",
+		description: "A law-themed technique that utilizes a judge-like shikigami to evaluate and punish crimes.",
+		abilities: [
+			{
+				name: "Judgeman's Decree",
+				description: "Summons a shikigami that enforces the rules of a courtroom and delivers verdicts.",
+			},
+		],
+		domainExpansion: {
+			name: "Deadly Sentencing",
+			description: "A domain that forbids all violence and forces a legal trial.",
+			appearance: "A minimalist, high-ceiling courtroom.",
+		},
+		status: "Active",
+		grade: "Grade 1", // Sangat kuat meski baru terbangkitkan
+	},
+	{
+		id: "cp-063",
+		characterId: 201644,
+		ownerName: "Kirara Hoshi",
+		techniqueName: "Love Rendezvous",
+		type: "Innate Technique",
+		description:
+			"A spatial technique based on the Southern Cross constellation that controls the distance between objects.",
+		abilities: [
+			{
+				name: "Constellation Marking",
+				description:
+					"Marks targets with stars; they must follow a specific orbital order or be repelled/attracted forcefully.",
+			},
+		],
+		status: "Active",
+		grade: "Grade 1", // Tekniknya sangat sulit dikalahkan tanpa strategi matang
+	},
+	{
+		id: "cp-064",
+		characterId: 207600,
+		ownerName: "Ryu Ishigori",
+		techniqueName: "Cursed Energy Discharge",
+		type: "Innate Technique",
+		description:
+			"A technique that allows the user to discharge massive amounts of cursed energy with immense explosive power, regardless of whether they have recently used a domain.",
+		abilities: [
+			{
+				name: "Granite Blast",
+				description:
+					"A powerful beam of cursed energy fired from his hair, capable of leveling entire buildings.",
+			},
+		],
+		status: "Active",
+		grade: "Grade 1", // Setara Grade 1 spesial/kandidat Special Grade karena output energinya tertinggi.
+	},
+	{
+		id: "cp-065",
+		characterId: 238440,
+		ownerName: "Jin Itadori",
+		techniqueName: "None",
+		type: "None",
+		description:
+			"Yuji Itadori's father. While he appears to be a normal human, his lineage is tied to the complex plans of Kenjaku.",
+		abilities: [],
+		status: "Unknown",
+		grade: "Non-Sorcerer",
+	},
+	{
+		id: "cp-066",
+		characterId: 188245,
+		ownerName: "Wasuke Itadori",
+		techniqueName: "None",
+		type: "None",
+		description:
+			"Yuji's grandfather who raised him. He possessed no cursed techniques but had a strong will and deep care for his grandson.",
+		abilities: [],
+		status: "Deceased",
+		grade: "Non-Sorcerer",
+	},
+	{
+		id: "cp-067",
+		characterId: 283296,
+		ownerName: "Kaori Itadori",
+		techniqueName: "Antigravity System",
+		type: "Innate Technique",
+		description:
+			"An innate technique that allows the user to negate gravity within a specific range around themselves.",
+		abilities: [
+			{
+				name: "Antigravity Field",
+				description:
+					"Creates a zone where gravitational force is nullified, used both for defense and tactical movement.",
+			},
+		],
+		status: "Deceased",
+		grade: "Grade 1",
+	},
+	{
+		id: "cp-068",
+		characterId: 245297,
+		ownerName: "Judgeman",
+		techniqueName: "Legal Procedure Enforcement",
+		type: "Shikigami Ability",
+		description:
+			"The shikigami linked to Hiromi Higuruma's technique. It acts as an impartial judge during his domain's trials.",
+		abilities: [
+			{
+				name: "Evidence Presentation",
+				description:
+					"Presents evidence of the target's past crimes to the prosecutor (Higuruma) to determine a verdict.",
+			},
+		],
+		status: "Active",
+		grade: "Grade 1",
+	},
+	{
+		id: "cp-069",
+		characterId: 204748,
+		ownerName: "Hajime Kashimo",
+		techniqueName: "Mythic Beast Amber",
+		type: "Innate Technique",
+		description:
+			"A one-time-use technique that reshapes the user's body to manifest any electrical phenomena, at the cost of the user's life after use.",
+		abilities: [
+			{
+				name: "Lightning Discharge",
+				description: "Fires a guaranteed-hit lightning bolt by accumulating electrical charges on the target.",
+			},
+		],
+		status: "Active",
+		grade: "Special Grade", // Mengingat kekuatannya sebagai penyihir terkuat di masanya.
+	},
+	{
+		id: "cp-070",
+		characterId: 196089,
+		ownerName: "Kenjaku",
+		techniqueName: "Body Hopping / Cursed Spirit Manipulation",
+		type: "Innate Technique",
+		description:
+			"An ancient sorcerer who transplants their brain into different vessels to gain their techniques and memories.",
+		abilities: [
+			{
+				name: "Cursed Spirit Manipulation",
+				description: "The ability to absorb and control cursed spirits (taken from Suguru Geto's body).",
+			},
+			{
+				name: "Antigravity System (Lapsed)",
+				description: "Uses the technique of Kaori Itadori to manipulate gravity for defense.",
+			},
+		],
+		domainExpansion: {
+			name: "Womb Profusion",
+			description:
+				"An open-barrier domain that manifests a pillar of cursed spirits to crush everything in its radius.",
+			appearance: "A grotesque pillar made of multiple cursed spirits and distorted bodies.",
+		},
+		status: "Active",
+		grade: "Special Grade",
+	},
+	{
+		id: "cp-071",
+		characterId: 285877,
+		ownerName: "Kogane",
+		techniqueName: "Game Administration",
+		type: "Shikigami Ability",
+		description:
+			"The official manager shikigami for the Culling Game. Each player is assigned one to monitor rules and points.",
+		abilities: [
+			{
+				name: "Point Management",
+				description:
+					"Tracks and updates the points of the player it is assigned to, facilitating rule additions.",
+			},
+		],
+		status: "Active",
+		grade: "Non-Sorcerer",
+	},
+	{
+		id: "cp-072",
+		characterId: 208196,
+		ownerName: "Kuroourushi",
+		techniqueName: "Cockroach Manipulation",
+		type: "Innate Technique",
+		description:
+			"A Special Grade cursed spirit that can control massive swarms of cockroaches and reproduce endlessly through cursed energy.",
+		abilities: [
+			{
+				name: "Fester Life Blade",
+				description:
+					"A sword that injects cockroach eggs into the target, which hatch instantly to consume the victim from within.",
+			},
+		],
+		status: "Active",
+		grade: "Special Grade",
+	},
+	{
+		id: "cp-073",
+		characterId: 199938,
+		ownerName: "Hana Kurusu",
+		techniqueName: "Jacob's Ladder",
+		type: "Innate Technique",
+		description:
+			"A technique that can nullify and extinguish any cursed technique, cursed tool, or barrier, including the seal on the Prison Realm.",
+		abilities: [
+			{
+				name: "Technique Extinguishment",
+				description: "Manifests light that purifies and erases cursed energy and evil intent.",
+			},
+		],
+		status: "Active",
+		grade: "Special Grade", // Karena statusnya sebagai vessel "Angel".
+	},
+	{
+		id: "cp-074",
+		characterId: 288062,
+		ownerName: "Dhruv Lakdawalla",
+		techniqueName: "Shikigami Orbit",
+		type: "Shikigami Ability",
+		description:
+			"An ancient sorcerer who creates giant shikigami. The paths his shikigami take become the boundaries of his domain.",
+		abilities: [
+			{
+				name: "Orbital Domain",
+				description:
+					"Manifests a domain without a barrier simply by having his shikigami circle a specific area.",
+			},
+		],
+		status: "Deceased",
+		grade: "Grade 1",
+	},
+	{
+		id: "cp-075",
+		characterId: 291255,
+		ownerName: "Kieta Oor",
+		techniqueName: "Unconfirmed",
+		type: "None",
+		description:
+			"A participant in the Culling Game whose specific abilities were not fully explored before their elimination.",
+		abilities: [],
+		status: "Deceased",
+		grade: "Grade 3",
+	},
+	{
+		id: "cp-076",
+		characterId: 189234,
+		ownerName: "Rika Orimoto",
+		techniqueName: "Cursed Energy Mimicry / Storage",
+		type: "Shikigami Ability",
+		description:
+			"The 'Queen of Curses' who serves as a massive storage of cursed energy and tools for Yuta Okkotsu.",
+		abilities: [
+			{
+				name: "Copy / Mimicry",
+				description:
+					"Allows the user to mirror and utilize the cursed techniques of others after consuming a part of them.",
+			},
+		],
+		status: "Deceased", // Spirit form is an extension of Yuta's power
+		grade: "Special Grade",
+	},
+	{
+		id: "cp-077",
+		characterId: 207021,
+		ownerName: "Reggie Star",
+		techniqueName: "Contractual Reification",
+		type: "Innate Technique",
+		description:
+			"A technique that allows the user to manifest the objects or effects described on a physical contract or receipt by burning it with cursed energy.",
+		abilities: [
+			{
+				name: "Object Manifestation",
+				description: "Can summon anything from cars to house-sized weights based on his collected receipts.",
+			},
+		],
+		status: "Deceased",
+		grade: "Grade 1",
+	},
+	{
+		id: "cp-078",
+		characterId: 228713,
+		ownerName: "Fumihiko Takaba",
+		techniqueName: "Comedian",
+		type: "Innate Technique",
+		description:
+			"An incredibly powerful technique that makes anything the user thinks is funny become a reality, capable of even negating Gojo's infinity.",
+		abilities: [
+			{
+				name: "Reality Manipulation (Humor)",
+				description:
+					"Manifests gags and slapstick logic into the real world, though the user is unaware of the technique's true nature.",
+			},
+		],
+		status: "Active",
+		grade: "Special Grade", // Potentially the strongest technique in existence
+	},
+	{
+		id: "cp-079",
+		characterId: 236446,
+		ownerName: "Tengen",
+		techniqueName: "Immortality",
+		type: "Barrier Technique",
+		description:
+			"An ancient sorcerer who maintains the barriers throughout Japan. They are more of a concept than a person after evolving.",
+		abilities: [
+			{
+				name: "Barrier Mastery",
+				description:
+					"The world's greatest barrier user, maintaining the security of Jujutsu High and the wider world.",
+			},
+		],
+		status: "Active",
+		grade: "Special Grade",
+	},
+	{
+		id: "cp-080",
+		characterId: 207779,
+		ownerName: "Takako Uro",
+		techniqueName: "Sky Manipulation",
+		type: "Innate Technique",
+		description:
+			"Allows the user to treat the sky as if it were a physical surface, pulling and stretching space like a thin film.",
+		abilities: [
+			{
+				name: "Thin Ice Breaker",
+				description:
+					"Strikes the surface of the 'sky' to send a shockwave through the air that hits the target directly.",
+			},
+		],
+		status: "Active",
+		grade: "Grade 1",
+	},
+	{
+		id: "cp-081",
+		characterId: 193907,
+		ownerName: "Naoya Zenin",
+		techniqueName: "Projection Sorcery",
+		type: "Inherited Technique",
+		description:
+			"A Zenin clan technique that divides one second into 24 frames. The user must track their predetermined movements or be frozen.",
+		abilities: [
+			{
+				name: "Supersonic Speed",
+				description:
+					"By following the 24-frame rule, the user can accelerate to speeds that make them appear as a blur.",
+			},
+		],
+		status: "Deceased",
+		grade: "Grade 1",
+	},
+	{
+		id: "cp-082",
+		characterId: 248747,
+		ownerName: "Ogi Zenin",
+		techniqueName: "Blazing Courage",
+		type: "Innate Technique",
+		description: "A technique that coats the user's sword in intense flames using cursed energy.",
+		abilities: [
+			{
+				name: "Flame Slash",
+				description: "Engulfs the blade in fire to increase cutting power and burn the opponent.",
+			},
+		],
+		status: "Deceased",
+		grade: "Grade 1",
+	},
+	{
+		id: "cp-083",
+		characterId: 248901,
+		ownerName: "Jinichi Zenin",
+		techniqueName: "Missile Fist",
+		type: "Innate Technique",
+		description: "Manifests massive, ghost-like fists to pummel the enemy with overwhelming force.",
+		abilities: [
+			{
+				name: "Giant Fist Barrage",
+				description: "Summons multiple large-scale cursed energy fists for long-range impact.",
+			},
+		],
+		status: "Deceased",
+		grade: "Grade 1",
+	},
+	{
+		id: "cp-084",
+		characterId: 248898,
+		ownerName: "Ranta Zenin",
+		techniqueName: "Glare",
+		type: "Innate Technique",
+		description: "A technique that uses the user's gaze to physically restrain a target's movement.",
+		abilities: [
+			{
+				name: "Visual Binding",
+				description:
+					"Manifests giant floating eyes that lock the target in place as long as the user maintains focus.",
+			},
+		],
+		status: "Deceased",
+		grade: "Grade 2",
+	},
+	{
+		id: "cp-085",
+		characterId: 186825,
+		ownerName: "Setsuko Sasaki",
+		techniqueName: "None",
+		type: "None",
+		description: "A member of the Occult Research Club and Yuji's school friend. She has no jujutsu powers.",
+		abilities: [],
+		status: "Active",
+		grade: "Non-Sorcerer",
+	},
+	{
+		id: "cp-086",
+		characterId: 248961,
+		ownerName: "Chojuro Zenin",
+		techniqueName: "Earth Manipulation",
+		type: "Innate Technique",
+		description:
+			"A technique that allows the user to manipulate the earth, specifically manifesting large hands made of stone and soil.",
+		abilities: [
+			{
+				name: "Stone Palm Bind",
+				description: "Creates massive hands from the ground to crush or restrain the target.",
+			},
+		],
+		status: "Deceased",
+		grade: "Grade 1",
+	},
+	{
+		id: "cp-087",
+		characterId: 248962,
+		ownerName: "Nobuaki Zenin",
+		techniqueName: "Unconfirmed (Cursed Tool Mastery)",
+		type: "None",
+		description:
+			"The captain of the 'Kukuru' unit within the Zenin clan, specializing in combat with specialized cursed tools.",
+		abilities: [
+			{
+				name: "Tactical Command",
+				description: "Expert in leading groups of low-ranking sorcerers in coordinated weapon attacks.",
+			},
+		],
+		status: "Deceased",
+		grade: "Grade 1",
+	},
 ];
