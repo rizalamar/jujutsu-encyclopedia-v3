@@ -80,4 +80,13 @@
 	.no-scrollbar {
 		scrollbar-width: none;
 	}
+
+	.writing-vertical {
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+	}
+
+	.clan-transition {
+		transition: all 0.8 cubic-bezier(0.4, 0, 0.2, 1);
+	}
 }

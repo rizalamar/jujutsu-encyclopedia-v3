@@ -1,4 +1,4 @@
-import { Bookmark, Ghost, Home, Landmark, Users } from "lucide-react";
+import { Bookmark, Ghost, Home, Landmark, ShieldUser, Users } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
@@ -8,6 +8,7 @@ export default function Navbar() {
 		{ name: "Home", path: "/", icon: <Home size={18} /> },
 		{ name: "Characters", path: "/characters", icon: <Users size={18} /> },
 		{ name: "Grades", path: "/grades", icon: <Landmark size={18} /> },
+		{ name: "Clans", path: "/clans", icon: <ShieldUser size={18} /> },
 		{ name: "Favorites", path: "/favorites", icon: <Bookmark size={18} /> },
 	];
 	return (
