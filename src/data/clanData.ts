@@ -49,7 +49,7 @@ export const clanData: ClanInfo[] = [
 					"A high-speed technique that divides one second into 24 frames, allowing for movement that appears as instantaneous teleportation.",
 			},
 		],
-		memberIds: [164470, 164482, 164483, 175542, 184484], // Megumi, Maki, Mai, Toji, Naobito
+		memberIds: [164470, 164482, 164483, 193907, 184484, 248747, 248901, 248898, 248961, 248962], // Megumi, Maki, Mai, Toji, Naobito
 	},
 	{
 		id: "kamo",

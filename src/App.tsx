@@ -6,6 +6,7 @@ import CharacterDetailPage from "./pages/CharacterDetailPage";
 import FavoritesPage from "./pages/FavoritesPage";
 import GradingPage from "./pages/GradingPage";
 import ClanPage from "./pages/ClanPage";
+import Footer from "./components/layout/Footer";
 
 function App() {
 	return (
@@ -22,6 +23,8 @@ function App() {
 					<Route path="/favorites" element={<FavoritesPage />} />
 				</Routes>
 			</div>
+
+			<Footer />
 		</Router>
 	);
 }
