@@ -22,7 +22,7 @@ Ensiklopedia digital interaktif untuk seri Jujutsu Kaisen. Aplikasi ini menggabu
 
 ## 🌐 Demo & Tampilan
 
--   **Live Demo:** [Cek di sini](https://jujutsu-encyclopedia-v3-pck1xxoqw-rizalamars-projects.vercel.app/) _(Ganti dengan link Vercel kamu)_
+-   **Live Demo:** [Cek di sini](https://jujutsu-encyclopedia-v3-pck1xxoqw-rizalamars-projects.vercel.app/)
 
 ![Tampilan Website](https://github.com/user-attachments/assets/366bdad4-7a0b-4420-a794-1efca3db08d3)
 
