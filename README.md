@@ -20,6 +20,12 @@ Ensiklopedia digital interaktif untuk seri Jujutsu Kaisen. Aplikasi ini menggabu
 -   **API:** Jikan API (MyAnimeList)
 -   **Routing:** React Router 7
 
+## 🌐 Demo & Tampilan
+
+-   **Live Demo:** [Cek di sini](https://jujutsu-encyclopedia-v3-pck1xxoqw-rizalamars-projects.vercel.app/) _(Ganti dengan link Vercel kamu)_
+
+![Tampilan Website](https://github.com/user-attachments/assets/366bdad4-7a0b-4420-a794-1efca3db08d3)
+
 ## 📦 Instalasi Lokal
 
 1. Clone repositori ini:
