@@ -36,7 +36,7 @@ export default function CharacterDetailPage() {
 
 			{/* Hero Detail Section */}
 			<CharacterHero
-				id={id}
+				id={id || ""}
 				character={characterDetail}
 				staticData={staticData}
 				isFavorite={isFavorite(characterDetail.mal_id)}
@@ -53,7 +53,7 @@ export default function CharacterDetailPage() {
 					<CharacterMedia anime={characterDetail.anime} manga={characterDetail.manga} />
 
 					{/* Gallery Section */}
-					<CharacterGallery characterId={id} characterName={characterDetail.name} />
+					<CharacterGallery characterId={id || ""} characterName={characterDetail.name} />
 
 					{/* Voice actors */}
 					<CharacterVoices voices={characterDetail.voices} />

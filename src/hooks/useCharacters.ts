@@ -20,7 +20,7 @@ export const useCharacters = () => {
 				setCharacters(res.data);
 				setError(null);
 			} catch (error) {
-				setError(error);
+				setError(error instanceof Error ? error.message : "An error occurred");
 			} finally {
 				setLoading(false);
 			}
@@ -39,7 +39,7 @@ export const useCharacters = () => {
 		return filteredCharacter?.slice(startIndex, startIndex + CHARS);
 	}, [currentPage, filteredCharacter]);
 
-	const totalPages = Math.ceil(characters?.length / CHARS);
+	const totalPages = Math.ceil((characters?.length || 0) / CHARS);
 
 	const goToPage = (page: number) => {
 		searchParams.set("page", page.toString());

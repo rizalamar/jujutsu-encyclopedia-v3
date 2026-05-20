@@ -15,7 +15,7 @@ export const useAnimeJJK = (initialId: number = 40748) => {
 				setData(res.data);
 				setError(null);
 			} catch (error) {
-				setError(error);
+				setError(error instanceof Error ? error.message : "An error occurred");
 			} finally {
 				setLoading(false);
 			}

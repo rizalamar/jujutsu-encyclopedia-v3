@@ -15,7 +15,7 @@ export const useCharacterPictures = (id: string) => {
 				setPictures(res.data);
 				setError(null);
 			} catch (error) {
-				setError(error);
+				setError(error instanceof Error ? error.message : "An error occurred");
 			} finally {
 				setLoading(false);
 			}

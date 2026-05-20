@@ -1,73 +1,44 @@
-# React + TypeScript + Vite
+# Jujutsu Kaisen Encyclopedia V3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ensiklopedia digital interaktif untuk seri Jujutsu Kaisen. Aplikasi ini menggabungkan data real-time dari Jikan API (MyAnimeList) dengan data statis mendalam mengenai klan, teknik kutukan, dan sistem kekuatan.
 
-Currently, two official plugins are available:
+## 🚀 Fitur Utama
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+-   **Daftar Karakter:** Eksplorasi karakter JJK dengan data terbaru.
+-   **Detail Karakter:** Informasi lengkap mulai dari bio, pengisi suara, hingga galeri foto.
+-   **Sistem Kekuatan:** Penjelasan mendalam tentang Teknik Kutukan dan Domain Expansion.
+-   **Klan Besar:** Informasi sejarah dan teknik warisan dari klan Gojo, Zenin, dan Kamo.
+-   **Favorit:** Simpan karakter favorit kamu ke dalam daftar lokal.
+-   **Responsive Design:** Tampilan modern dan gelap yang nyaman di semua perangkat.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-   **Framework:** React 19 (TypeScript)
+-   **Build Tool:** Vite
+-   **Styling:** Tailwind CSS 4
+-   **Icons:** Lucide React
+-   **API:** Jikan API (MyAnimeList)
+-   **Routing:** React Router 7
 
-## Expanding the ESLint configuration
+## 📦 Instalasi Lokal
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clone repositori ini:
+    ```bash
+    git clone <url-repo-kamu>
+    ```
+2. Masuk ke direktori proyek:
+    ```bash
+    cd jujutsu-kaisen-encyclopedia-v3
+    ```
+3. Install dependensi:
+    ```bash
+    npm install
+    ```
+4. Jalankan aplikasi:
+    ```bash
+    npm run dev
+    ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Dibuat dengan ❤️ untuk para penggemar Jujutsu Kaisen.

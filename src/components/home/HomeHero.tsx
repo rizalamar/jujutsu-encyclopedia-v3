@@ -19,7 +19,7 @@ export default function HomeHero({ data, loading, currentId, setCurrentId, onExp
 			{/* Dynamic Background */}
 			<div className="absolute inset-0 z-0">
 				<img
-					src={activeShow.image}
+					src={activeShow?.image || ""}
 					alt="Background"
 					className="w-full h-full object-cover object-center transition-all duration-300 brightness-[0.3]"
 				/>

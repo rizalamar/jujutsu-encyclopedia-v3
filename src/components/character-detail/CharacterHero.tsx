@@ -5,7 +5,7 @@ import type { CursedPower } from "../../@types/cursedPower";
 interface Props {
 	id: string;
 	character: CharacterDetail;
-	staticData: CursedPower;
+	staticData?: CursedPower;
 	isFavorite: boolean;
 	onFavoriteToggle: () => void;
 }
