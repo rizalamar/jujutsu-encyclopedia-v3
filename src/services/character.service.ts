@@ -1,21 +1,17 @@
-import type {
-	Character,
-	CharacterDetail,
-	CharacterDetailResponse,
-	CharacterPicture,
-	CharacterPicturesResponse,
-	CharacterResponse,
-} from "../@types/character.types";
+import type { CharacterDetailResponse, CharacterPicturesResponse, CharacterResponse } from "../@types/character.types";
 import { api } from "../api/api";
 
 export const characterService = {
 	getAllCharacters: async (id: number = 40748): Promise<CharacterResponse> => {
-		return api.get<Character[]>(`anime/${id}/characters`);
+		const response = api.get<CharacterResponse>(`anime/${id}/characters`);
+		return (await response).data;
 	},
 	getCharacterById: async (id: string): Promise<CharacterDetailResponse> => {
-		return api.get<CharacterDetail>(`/characters/${id}/full`);
+		const response = api.get<CharacterDetailResponse>(`/characters/${id}/full`);
+		return (await response).data;
 	},
 	getCharacterPictures: async (id: string): Promise<CharacterPicturesResponse> => {
-		return api.get<CharacterPicture[]>(`/characters/${id}/pictures`);
+		const response = api.get<CharacterPicturesResponse>(`/characters/${id}/pictures`);
+		return (await response).data;
 	},
 };

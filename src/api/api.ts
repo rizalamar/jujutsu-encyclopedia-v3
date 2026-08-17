@@ -37,6 +37,6 @@ api.interceptors.response.use(
 			console.error("Network error, check your internet connection");
 		}
 
-		return Promise.reject(message);
+		return Promise.reject(new Error(message));
 	}
 );

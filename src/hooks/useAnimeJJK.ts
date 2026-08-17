@@ -10,6 +10,7 @@ export const useAnimeJJK = (initialId: number = 40748) => {
 
 	useEffect(() => {
 		const fetchJJKData = async () => {
+			setLoading(true);
 			try {
 				const res = await animeService.getJJKData(currentId);
 				setData(res.data);

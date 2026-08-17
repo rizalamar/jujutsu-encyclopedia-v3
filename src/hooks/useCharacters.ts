@@ -15,6 +15,7 @@ export const useCharacters = () => {
 
 	useEffect(() => {
 		const fetchCharacters = async () => {
+			setLoading(true);
 			try {
 				const res = await characterService.getAllCharacters(animeId);
 				setCharacters(res.data);
