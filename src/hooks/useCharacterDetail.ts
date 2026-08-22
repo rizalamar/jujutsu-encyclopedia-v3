@@ -12,12 +12,16 @@ export const useCharacterDetail = () => {
 	useEffect(() => {
 		const fetchCharacterDetail = async () => {
 			if (!id) return;
+			setLoading(true);
 			try {
 				const res = await characterService.getCharacterById(id);
 				setCharacterDetail(res.data);
 				setError(null);
 			} catch (error) {
-				setError(error instanceof Error ? error.message : "An error occurred");
+				const errorMessage = error instanceof Error ? error.message : "An unknown error occurred";
+				console.log("🚀 ~ fetchCharacterDetail ~ errorMessage:", errorMessage);
+				setError(errorMessage);
+				setCharacterDetail(null);
 			} finally {
 				setLoading(false);
 			}

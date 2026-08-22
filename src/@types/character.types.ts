@@ -91,9 +91,7 @@ export interface CharacterPicturesResponse {
 	data: CharacterPicture[];
 }
 
-export interface CharacterResponse {
-	data: Character[];
-}
+export type CharacterResponse = Character[];
 
 export interface CharacterDetailResponse {
 	data: CharacterDetail;

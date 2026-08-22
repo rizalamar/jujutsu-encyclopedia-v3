@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 interface Props {
 	icon: ReactNode;
 	label: string;
-	value: string | number;
+	value: number | null;
 }
 
 export default function StatRow({ icon, label, value }: Props) {

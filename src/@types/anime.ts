@@ -1,102 +1,78 @@
-export interface AnimeImage {
-	webp: {
-		image_url: string;
-		small_image_url: string;
-		large_image_url: string;
-	};
-}
-
-export interface Genre {
+export interface JJKBaseData {
 	mal_id: number;
-	type: string;
-	name: string;
-}
-
-export interface Studio {
-	name: string;
-}
-
-export interface Trailer {
-	youtube_id: string | null;
-	url: string | null;
-	embed_url: string | null;
+	url: string;
 	images: {
-		image_url: string | null;
-		small_image_url: string | null;
-		medium_image_url: string | null;
-		large_image_url: string | null;
-		maximum_image_url: string | null;
+		webp: {
+			image_url: string;
+			small_image_url: string;
+			large_image_url: string;
+		};
 	};
-}
-
-export interface Producers {
-	mal_id: number;
-	type: string;
-	name: string;
-	url: string;
-}
-
-export interface JJKData {
-	mal_id: number;
-	url: string;
-	images: AnimeImage;
-	trailer: Trailer;
 	title: string;
-	title_english: string;
-	title_japanese: string;
+	title_english: string | null;
+	title_japanese: string | null;
 	type: string;
 	source: string;
-	season: string;
-	episodes: number;
+	season: string | null;
+	episodes: number | null;
 	status: string;
 	airing: boolean;
-	aired: {
-		from: string;
-		to: string;
-		string: string;
-	};
-	demographics: {
-		mal_id: number;
-		type: string;
-		name: string;
-		url: string;
-	}[];
-	duration: string;
-	rating: string;
-	score: number;
-	scored_by: number;
-	rank: number;
-	popularity: number;
-	producers: Producers[];
-	synopsis: string;
-	members: number;
-	year: number;
-	studios: Studio[];
-	genres: Genre[];
-	themes: Genre[];
-	relations: {
-		relation: string;
-		entry: {
+	synopsis: string | null;
+	genres: [
+		{
 			mal_id: number;
 			type: string;
 			name: string;
-		}[];
-	}[];
-
-	theme: {
-		openings: string[];
-		endings: string[];
+			url: string;
+		}
+	];
+	studios: [
+		{
+			mal_id: number;
+			type: string;
+			name: string;
+			url: string;
+		}
+	];
+	aired: {
+		from: string | null;
+		to: string | null;
+		string: string;
 	};
-	external: {
-		name: string;
-		url: string;
-	}[];
-	streaming: {
-		name: string;
-		url: string;
-	}[];
+	year: number | null;
+	demographics: [
+		{
+			mal_id: number;
+			type: string;
+			name: string;
+			url: string;
+		}
+	];
+	themes: [
+		{
+			mal_id: number;
+			type: string;
+			name: string;
+			url: string;
+		}
+	];
+	producers: [
+		{
+			mal_id: number;
+			type: string;
+			name: string;
+			url: string;
+		}
+	];
+	duration: string;
+	rating: string;
+	score: number | null;
+	scored_by: number | null;
+	rank: number | null;
+	popularity: number | null;
+	members: number | null;
 }
 
-export interface JJKResponse {
-	data: JJKData;
+export interface JJKBaseResponse {
+	data: JJKBaseData;
 }

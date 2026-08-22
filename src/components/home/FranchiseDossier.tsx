@@ -1,10 +1,10 @@
 import { Award, Hash, Star, TrendingUp, Users } from "lucide-react";
-import type { JJKData } from "../../@types/anime";
+import type { JJKBaseData } from "../../@types/anime";
 import DossierItem from "./ui/DossierItem";
 import StatRow from "./ui/StatRow";
 
 interface Props {
-	data: JJKData | null;
+	data: JJKBaseData | null;
 	loading: boolean;
 }
 
@@ -31,21 +31,13 @@ export default function FranchiseDossier({ data, loading }: Props) {
 
 					<div className="space-y-10">
 						<StatRow icon={<Star className="text-yellow-500" />} label="MAL Score" value={data.score} />
-						<StatRow
-							icon={<Hash className="text-jjk-accent" />}
-							label="Global Rank"
-							value={`#${data.rank}`}
-						/>
+						<StatRow icon={<Hash className="text-jjk-accent" />} label="Global Rank" value={data.rank} />
 						<StatRow
 							icon={<TrendingUp className="text-green-500" />}
 							label="Popularity"
-							value={`#${data.popularity}`}
+							value={data.popularity}
 						/>
-						<StatRow
-							icon={<Users className="text-purple-500" />}
-							label="Members"
-							value={(data.members / 1000000).toFixed(2) + "M"}
-						/>
+						<StatRow icon={<Users className="text-purple-500" />} label="Members" value={data.members} />
 					</div>
 				</div>
 

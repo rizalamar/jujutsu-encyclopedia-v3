@@ -23,7 +23,7 @@ export default function CharacterDetailPage() {
 	const cursedTechniquesCharacter = cursedTechniques.filter((t) => t.characterId === Number(id));
 
 	if (loading) return <Loading summon={"Unveiling Sorcerer Files..."} />;
-	if (error || !characterDetail) return <Error error={"Failed to load sorcerer data..."} />;
+	if (error || !characterDetail) return <Error error={error} />;
 
 	return (
 		<main className="min-h-screen text-white bg-jjk-dark pb-20">

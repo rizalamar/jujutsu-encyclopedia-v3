@@ -18,7 +18,7 @@ export const useCharacters = () => {
 			setLoading(true);
 			try {
 				const res = await characterService.getAllCharacters(animeId);
-				setCharacters(res.data);
+				setCharacters(res);
 				setError(null);
 			} catch (error) {
 				setError(error instanceof Error ? error.message : "An error occurred");

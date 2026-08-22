@@ -1,10 +1,10 @@
 import { ChevronDown, ChevronUp, Monitor, PlayCircle } from "lucide-react";
 import { JJK_SHOWS } from "../../data/shows";
-import type { JJKData } from "../../@types/anime";
+import type { JJKBaseData } from "../../@types/anime";
 import { useState } from "react";
 
 interface Props {
-	data: JJKData | null;
+	data: JJKBaseData | null;
 	loading: boolean;
 	currentId: number;
 	setCurrentId: (id: number) => void;
